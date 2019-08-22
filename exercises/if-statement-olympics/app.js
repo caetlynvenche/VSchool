@@ -89,3 +89,5 @@ if (myNum % 2 === 0) {
 } else {
     console.log("odd")
 }
+
+
