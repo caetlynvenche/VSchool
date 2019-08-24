@@ -5,7 +5,7 @@ let doubleParam = function(num1, num2) {
 console.log(doubleParam(3,8))
 
 
-let tripleParam = function(num1, num2, num3) {
+function tripleParam(num1, num2, num3) {
     return Math.max(num1, num2, num3)
 }
 
