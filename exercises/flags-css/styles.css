@@ -1,0 +1,151 @@
+div {
+    height: 200px;
+    width: 300px;
+    position: absolute;
+    border: 2px gray solid;
+}
+
+p {
+    position: absolute;
+    font-size: 0px;
+}
+
+.france {
+    background-color: white;
+}
+    
+    .franceRed {
+        width: 100px;
+        height: 200px;
+        background-color: red;
+        left: 200px;
+    }
+
+    .franceBlue {
+        width: 100px;
+        height: 200px;
+        background-color: blue;
+    }
+
+.germany {
+    background-color: #F5CE04;
+    left: 350px;
+}
+    .germanyBlack {
+        background-color: black;
+        height: 67px;
+        width: 300px;
+    }
+    .germanyRed {
+        background-color: red;
+        height: 67px;
+        width: 300px;
+        top: 67px;
+    }
+
+.madagascar {
+    background-color: white;
+    top: 250px;
+}
+    .madagascarRed {
+        background-color: red;;
+        width: 200px;
+        height: 100px;
+        left: 100px;
+    }
+    .madagascarGreen {
+        background-color: #2C7E3A;
+        width: 200px;
+        height: 100px;
+        left: 100px;
+        top: 100px;
+    }
+
+.switzerland {
+    background-color: red;
+    left: 350px;
+    top: 250px;
+}
+    .switzerlandVertical {
+        background-color: white;
+        width: 50px;
+        height: 150px;
+        left: 120px;
+        top: 18px;
+    }
+    .switzerlandHorizontal {
+        background-color: white;
+        width: 150px;
+        height: 50px;
+        left: 70px;
+        top: 70px;
+    }
+
+.sweden {
+    background-color: #336AA7;
+    top: 500px;
+}
+    .swedenHorizontal {
+        background-color: #F5CC01;
+        width: 300px;
+        height: 50px;
+        top: 70px;
+    }
+    .swedenVertical {
+        background-color: #F5CC01;
+        width: 50px;
+        height: 200px;
+        left: 80px;
+    }
+
+.gambia {
+    top: 500px;
+    left: 350px;
+    background-color: white;
+}
+    .gambiaRed {
+        background-color: red;
+        height: 66px;
+        width: 300px;
+    }
+    .gambiaBlue {
+        background-color: blue;
+        width: 300px;
+        height: 40px;
+        top: 80px;
+    }
+    .gambiaGreen {
+        background-color: green;
+        height: 66px;
+        width: 300px;
+        top: 134px;
+    }
+
+.tonga {
+    background-color: red;
+    top: 750px;
+}
+    .tongaWhite {
+        background-color: white;
+        width: 120px;
+    }
+    .tongaRedVert {
+
+    }
+    .tongaRedHoriz
+
+.japan {
+
+}
+
+.greece {
+
+}
+
+.niger {
+
+}
+
+.maldives {
+
+}
