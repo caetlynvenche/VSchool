@@ -1,0 +1,17 @@
+#square {
+    height: 300px;
+    width: 300px;
+    border: black 5px solid;
+    margin: auto;
+    background-color: white;
+}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+}
+
+body {
+    background-color: antiquewhite
+}
