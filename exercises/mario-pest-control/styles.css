@@ -1,12 +1,14 @@
 body {
     background-color: black;
+    font-family: mario;
 }
 
 .title {
-    background-color: #FBD000;
+    background-color: rgb(251, 208, 0);
     text-align: center;
     height:250px;
     width: 100%;
+    background: linear-gradient(rgb(251, 208, 0) 65%, black 100%);
 }
 
 .title > h1 {
@@ -32,39 +34,35 @@ img {
 
 .characters {
     height: 75%;
+    width: 100%;
     background-color: black;
     position: relative;
-    margin: auto;
+    /* margin: auto; */
+    text-align: center;
 }
 
 .char {
     text-align: center;
     height: 100%;
-    width: 33%;
     color: white;
 }
 
 .goomba {
     display: inline-block;
-    /* background-color: #049CD8; */
-    background: rgb(0,0,0);
-
 background: linear-gradient(rgba(4,156,216,1), black);
-    margin: auto;
+    width: 30%;
 }
 
 .bob-ombs {
     display: inline-block;
     background: linear-gradient(rgba(229,37,33,1), black);
-    /* background-color: #E52521; */
-    margin: auto;
+    width: 30%;
 }
 
 .cheep-cheeps {
     display: inline-block;
-    /* background-color: #43B047; */
     background: linear-gradient(rgba(67,176,71,1), black);
-    margin: auto;
+    width: 30%;
 }
 
 .price {
@@ -125,6 +123,7 @@ button {
     background-color: #FBD000;
     padding: 100px;
     text-align: center;
+    background: linear-gradient( rgb(251, 208, 0), rgb(251, 208, 0), black);
 }
 
 .footer {
@@ -133,4 +132,9 @@ button {
     padding: 20px;
     margin: 50px; 
     text-align: center;
+}
+
+@font-face {
+    font-family: mario;
+    src: url(SuperMario256.ttf)
 }

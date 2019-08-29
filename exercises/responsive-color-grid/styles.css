@@ -1,0 +1,65 @@
+* {
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+div {
+    margin: 10%;
+}
+
+p {
+    border: white 3px solid;
+    height: 125px;
+}
+
+.pink {
+    background-color: #F5C6D6;
+}
+
+.dkpink {
+    background-color: #EE2E84;
+}
+
+.blue {
+    background-color: #85CFD8;
+}
+
+.green {
+    background-color: #8DC63F;
+}
+
+.orange {
+    background-color: #E76E34;
+}
+
+@media (min-width: 768px) {
+    .pink {
+        width: 100%;
+    }
+
+    .dkpink {
+        width: 25%;
+        display: inline-block;
+    }
+
+    .blue {
+        width: 50%;
+        display: inline-block;
+    }
+
+    .green {
+        width: 75%;
+        display: inline-block;
+    }
+
+    .orange {
+        width: 25%;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 768px) {
+    p {
+        width: 100%;
+    }
+}
