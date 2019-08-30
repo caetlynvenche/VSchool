@@ -15,36 +15,38 @@
 
     <nav>
         <a href="index.html">Home</a>
-        <a href="rooms.html">Rooms</a>
         <a href="grounds.html">Grounds</a>
         <a href="events.html">Events</a>
         <a href="contact.html">Contact</a>
     </nav>
 
     <main>
+
+        <h1>Get in Contact!!</h1>
         <form name="form">
             <h2>Name:</h2>
 
             <div class="name">
                 <input name="firstName" type="text" placeholder="First Name">
                 <input name="lastName" type="text" placeholder="Last Name">
-                <input name="email" type="text" placeholder="Email">
+                
             </div>
             
 
-            <h2>Number:</h2>
+            <h2>Contant:</h2>
 
             <div class="phone">
+
+                <input name="email" type="text" placeholder="Email">
                 <label for="areaCode">(</label>
                 <input name="areaCode" type="number" placeholder="***" maxlength="3">
                 <label for="areaCode">)</label>
-                <input name="numB "type="number" placeholder="***" maxlength="3">
+                <input name="numB" type="number" placeholder="***" maxlength="3">
                 <label for="numB">-</label>
                 <input name="numC" type="number" placeholder="****" maxlength="4">
             </div>
 
-            <!-- <div class="types"> -->
-                <h2>Reason for Contacting</h2>
+                <h2>Reason for Contacting:</h2>
             <div class="typeContact">
                 <input name="typeContact" type="checkbox" value="room">
                 <label for="typeContact">Room Rental</label>
@@ -53,17 +55,19 @@
             </div>
 
             
-                <h2>Prefered Contact</h2>
+                <h2>Prefered Contact:</h2>
             <div class="prefContact">
                 <input name="prefContact" type="radio" value="call">
                 <label for="call">Call</label>
-                <input name="prefContact" type="radio" value="call">
+                <input name="prefContact" type="radio" value="text">
                 <label for="text">Text</label>
                 <input name="prefContact" type="radio" value="email">
                 <label for="email">Email</label>
             </div>  
-            
-            <!-- </div> -->
+
+            <div class="button">
+                <button>Submit</button>
+            </div>
             
                 
             

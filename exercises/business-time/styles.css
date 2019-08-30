@@ -1,6 +1,16 @@
+/* All */
+
 body {
     background-color: #bc8f8f;
     margin: 0px;
+}
+
+main {
+    background-color: #89023E;
+    padding: 100px;
+    color: #EED7C5;
+    margin: auto;
+    width: 75%;
 }
 
 nav {
@@ -10,10 +20,12 @@ nav {
     background-color: #2A324B;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 
+
 p {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 a {
@@ -35,11 +47,6 @@ a:hover {
     text-decoration: none;
 }
 
-
-header {
-    text-align: center;
-}
-
 header {
     padding: 10px;
     margin-top: 0px;
@@ -47,22 +54,37 @@ header {
     text-align: center;
     background-color: #2A324B;
     color: #EED7C5;
+    text-align: center;
 }
 
-.container {
-    display: flex;
-    flex-direction: row;
+h1 {
+    font-size: 50px;
+    text-align: center;
 }
+
+h2 {
+    color: rosybrown;
+    text-align: center;
+    font-size: 30px;
+}
+
+button {
+    background-color: #89023E;
+    border: dotted 2px rosybrown;
+    border-radius: 50%;
+    font-size: 30px;
+    color: rosybrown;
+    padding: 20px;
+    margin: 10px;
+}
+/* Contact */
 
 form {
     display: flex;
-    background-color: #89023E;
-    padding: 20px;
     margin: 20px;
     color: #EED7C5;
     flex-direction: column;
     margin: auto;
-    width: 75%;
     align-items: center;
 }
 
@@ -70,40 +92,81 @@ label {
     font-size: 25px;
 }
 
-input {
-    width: 250px;
-    background-color: #EED7C5;
-}
 
 input[type=text]  {
     color: #2A324B;
     font-size: 25px;
     margin: 10px;
+    width: 250px;
+    background-color: #EED7C5;
 }
 
 input[type=number]{
     color: #2A324B;
     font-size: 25px;
     width: 75px;
+    background-color: #EED7C5;
+}
+
+input[type=checkbox] {
+    width: 20px;
+}
+
+input[type=radio] {
+    width: 20px;
+}
+
+form > div {
+    margin: 20px;
 }
 
 
-.typeContent {
-    margin: 30px;
+/* Events */
+
+.imgLeft {
+    width: 50%;
+    margin-right: 30px;
+    margin-bottom: 20px;
+    float: left;
+    height: 300px;
+    object-fit: cover;
+    transform: scaleX(-1);
+    border: 10px dotted #2A324B;
+}
+
+.imgRight {
+    width: 50%;
+    margin-left: 30px;
+    margin-bottom: 20px;
+    float: right;
+    height: 300px;
+    object-fit: cover;
+    transform: scaleX(-1);
+    border: 10px dotted #2A324B;
+}
+
+.imgCenter {
+    width: 100%;
+    margin: auto;
+    height: 500px;
+    object-fit: cover;
+    border: 10px dotted #2A324B;
+}
+
+section {
+    width: 75%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+.events {
     display: flex;
-    /* justify-items: center */
+    flex-direction: column;
 }
 
-.phone {
-    margin: 30px;
-}
+/* Grounds */
 
-.name {
-    margin: 30px;
-}
-
-.prefContact {
-    margin: 30px;
-}
-.types {
+.navTwo {
+    top: 79px;
 }
