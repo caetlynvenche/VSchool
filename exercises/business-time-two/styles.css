@@ -1,0 +1,265 @@
+/* all */
+
+* {
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+    background-color: #534B62;
+    margin: 0px;
+}
+
+header {
+    background-color: #2A324B;
+    color: #EED7C5;
+    text-align: center;
+    padding: 40px;
+    padding-bottom: 1px;
+}
+
+nav {
+    background-color: #2A324B;
+    overflow: hidden;
+    font-size: 20px;
+    padding: 10px;
+    width: 100%;
+    position: sticky;
+    top: 0;
+}
+
+main {
+    background-color: #c8a3a3;
+    color: #2A324B;
+    margin: auto;
+    width: 75%;
+}
+
+section {
+    margin-bottom: 75px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    text-align: center;
+}
+
+h2 {
+    color: #89023E;
+    text-align: center;
+    font-size: 30px;
+    margin: 20px;
+}
+
+
+@media only screen and (max-width: 700px) {
+    header {
+        font-size: 20px;
+        padding: 15px;
+
+        padding-top: 50px;
+    }
+    
+    main {
+        padding: 10px;
+        width: 90%;
+    }
+    
+    #navLinks {
+        display: flex;
+        flex-direction: column;
+    }
+
+    input[type=text] {
+        width: 225px;
+        margin: 10px;
+    }
+
+    input[type=number] {
+        width: 70px;
+    }
+    
+    img {
+    border: 5px #2A324B dotted;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    header {
+        font-size: 40px;
+        padding: 20px;
+        padding-top: 100px;
+    }
+
+    main {
+        padding: 50px;
+        width: 75%;
+    }
+    
+    #navLinks {
+        display: flex;
+        flex-direction: row;
+    }
+    #try {
+        width: 50%;
+    }
+    a {
+        padding-left: 0px;
+    }
+
+    input[type=text] {
+    width: 250px;
+    margin: 10px;
+    }
+
+    input[type=number] {
+    width: 75px;
+    }
+
+    .name {
+        display: flex;
+    }
+
+    img {
+        border: 10px #2A324B dotted; 
+    }
+}
+
+
+
+#navToggle {
+    text-align: right;
+    margin: 10px;
+    width: 95%;
+    color: #C8A3A3;
+    padding: 10px;
+}
+
+.active {
+    display: none;
+}
+
+p {
+    font-size: 20px;
+    width: 85%;
+    margin: auto;
+    padding: 25px;
+    color: #2A324B;
+}
+
+a {
+    color: #EED7C5;
+    text-decoration: none;
+    text-align: center;
+    margin: 10px;
+    font-size: 30px;
+}
+
+
+a:hover {
+    text-decoration: none;
+    color: #EED7C5;
+}
+
+/* Form  */
+
+button {
+    background-color: #C8A3A3;
+    border: dotted 2px #2A324B;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #2A324B;
+    padding: 20px;
+    margin: 10px;
+}
+
+form {
+    display: flex;
+    margin: 20px;
+    flex-direction: column;
+    margin: auto;
+    align-items: center;
+    width: 50%
+}
+
+label {
+    font-size: 25px;
+    color: #2A324B
+}
+
+
+input[type=text]  {
+    color: #2A324B;
+    font-size: 25px;
+    width: 250px;
+    margin: 10px;
+    background-color: #EED7C5;
+}
+
+input[type=number]{
+    color: #2A324B;
+    font-size: 25px;
+    background-color: #EED7C5;
+}
+
+input[type=checkbox] {
+    width: 20px;
+}
+
+input[type=radio] {
+    width: 20px;
+}
+
+form > div {
+    margin: 20px;
+}
+
+.phone {
+    display: flex;
+}
+
+.inline {
+    display: inline;
+}
+
+.prefContact {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    margin: 20px;
+    width: 90%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.bookNow {
+    text-align: center;
+}
+
+.callToAction {
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    background-color: #534B62;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    width: 75%;
+    margin: auto;
+}
+
+.foot {
+    padding: 2px;
+    color: #C8A3A3;
+    width: 100%;
+}
+
+header > h2 {
+    margin: 10px;
+}
