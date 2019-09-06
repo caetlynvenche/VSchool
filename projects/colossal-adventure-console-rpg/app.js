@@ -94,11 +94,11 @@ const whatToDo = () => {
 }
 let walk = () => {
     min = 1
-    max = 5
+    max = 7
 
     let enemyChance = Math.floor((Math.random() * max) + 1)
 
-    if (enemyChance === 1 || enemyChance === 5) {
+    if (enemyChance === 1 || enemyChance === 5 || enemyChance === 6) {
         let currentEnemy = enemyDecider()
         currentEnemy.currentHealth = currentEnemy.healthMax
         console.log(`You run into a ${currentEnemy.type}.`)
@@ -183,6 +183,7 @@ you realize that you have two options.
         let townChoice = readlineSync.keyInSelect(townChoices, "What now?")
 
         if (townChoices[townChoice] === "Go to the Tavern") {
+            pictureTavern()
 console.log(`
 You walk into the tavern. It is mostly empty, but is still
 very warm and welcoming. You are given the option of a bigger, but much
@@ -220,6 +221,7 @@ more expensive room, versus a smaller and cheeper one.
                 }
         }
     } else if (eventRandom === 2) {
+        pictureChest()
 console.log(`
 Deep in the forest, you stumble upon a small and
 simple chest. Upon opening it, you find a health potion and a
@@ -258,7 +260,7 @@ let levelUp = () => {
 }
 
 const checkForEnd = () => {
-    if (player.healthMax >= 100) {
+    if (player.healthMax >= 75) {
 console.log(`
 After a long, and difficult journey, the walls of your
 destination finally come into view. You feel a sense of relief and
@@ -267,6 +269,45 @@ life, whatever it may bring.`)
 
 alive = false
     }
+}
+
+const pictureChest = () => {
+console.log(`
+
+
+        ___________________________
+        |                          |
+        |                          |
+        |__________________________|
+        |          |   |           |
+        |          |___|           |
+        |                          |
+        |                          |
+        |                          |
+        ___________________________
+
+
+`)
+}
+
+const pictureTavern = () => {
+console.log(`
+
+
+        ________________
+        |               |
+        |               |
+        |_______________| ___
+        |               |/ _ 
+        |               | | | |
+        |               |  -  |
+        |_______________| ___/
+        |               |
+        |               |
+        |               |
+        ________________
+`)
+
 }
 /////////////////////////////
 // //

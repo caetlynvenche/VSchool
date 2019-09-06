@@ -285,10 +285,11 @@ function stringConcat(arr) {
 // console.log(stringConcat([1,2,3]));
 
 function totalVotes(arr) {
-    const whoVotes = arr.reduce((final, current) => {
-        if (current.voted === true) {
-            final += 1
-            return final
+    const whoVotes = arr.reduce((a, b) => {
+        if (b.voted === true) {
+            return a + 1
+        } else {
+            return a
         }
     }, 0)
     return whoVotes
@@ -310,12 +311,10 @@ const voters = [
 ];
 // console.log(totalVotes(voters));
 
-// NEEDS WORK AND HELP HERE. RETURNING UNDEFINED
 
 function shoppingSpree(arr) {
     const cost = arr.reduce((final, current) => {
-        final += current
-        return final
+        return final + current.price
     }, 0)
     return cost
 }
@@ -330,11 +329,10 @@ var wishlist = [
 
 // console.log(shoppingSpree(wishlist));
 
-//can't get right
 
 function flatten(arr) {
     const arrListFlat = arr.reduce((final, current) => {
-        final = final.concat(current)
+        return final.concat(current)
     }, [])    
     return arrListFlat
 }
@@ -347,4 +345,91 @@ var arrays = [
 
 // console.log(flatten(arrays));
 
-//It wont happen
+
+// ES6 practice
+
+// 1)
+const carrots = ["bright orange", "ripe", "rotten"]
+
+mapVegetables = (arr) => {
+    return arr.map((carrot) => { return { type: "carrot", name: carrot }})
+}
+
+// 2)
+
+const people = [
+    {
+        name: "Princess Peach",
+        friendly: false
+    },
+    {
+        name: "Luigi",
+        friendly: true
+    },
+    {
+        name: "Mario",
+        friendly: true
+    },
+    {
+        name: "Bowser",
+        friendly: false
+    }
+]
+
+filterForFriendly = (arr) => {
+    return arr.filter((person) => {return person.friendly })
+}
+
+//3)
+
+doMathSum = (a, b) => { return a + b }
+
+produceProduct = (a, b) => { return a * b }
+
+//4)
+
+printString = (firstName, lastName, age) => {
+    return `Hi ${firstName} ${lastName}, how does it feel to be ${age}?`
+}
+
+//5)
+
+const animals = [
+    {
+        type: "dog",
+        name: "theodore"
+    },
+    {
+        type: "cat",
+        name: "whiskers"
+    },
+    {
+        type: "pig",
+        name: "piglette"
+    },
+    {
+        type: "dog",
+        name: "sparky"
+    }
+];
+
+filterForDogs = (arr) => { return arr.filter(animal => {
+    
+        if (animal.type === "dog") {
+            return true
+        } else {
+            return false
+        }
+    })
+}
+
+///How do I make this on one line?
+
+//6)
+
+newStr = (name, place) => {
+    return `Hi ${name}!
+    Welcome to ${place}.
+    I hope you enjoy your stay. Please ask the president of ${place} if you need anything.
+    `
+}
