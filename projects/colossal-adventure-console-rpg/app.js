@@ -190,7 +190,7 @@ very warm and welcoming. You are given the option of a bigger, but much
 more expensive room, versus a smaller and cheeper one.
 `)
 
-            max = 2
+            let max = 2
             let whichIsBetter = Math.floor((Math.random() * max) + 1)
                 if (whichIsBetter === 1) {
                     let optionDecided = readlineSync.keyInSelect(twoOptions, "Which do you do?")
@@ -252,7 +252,7 @@ let levelUp = () => {
         player.healthMax = player.healthMax + 1
         player.currentHealth = player.healthMax
         
-        for (i = 0; i < enemies.length; i++) {
+        for (let i = 0; i < enemies.length; i++) {
             let index = levelUpArr.indexOf(enemies[i].drop)
             inventory.pop(index)
         }
@@ -272,46 +272,108 @@ alive = false
 }
 
 const pictureChest = () => {
+// console.log(`
+
+
+//         ___________________________
+//         |                          |
+//         |                          |
+//         |__________________________|
+//         |          |   |           |
+//         |          |___|           |
+//         |                          |
+//         |                          |
+//         |                          |
+//         ___________________________
+
+
+// `)
+
 console.log(`
 
 
-        ___________________________
-        |                          |
-        |                          |
-        |__________________________|
-        |          |   |           |
-        |          |___|           |
-        |                          |
-        |                          |
-        |                          |
-        ___________________________
 
-
+                            _.--.
+                        _.-'_:-'||
+                    _.-'_.-::::'||
+               _.-:'_.-::::::'  ||
+             .' -.-:::::::'     ||
+            /.' ;|:::::::'      ||_
+           ||   ||::::::'     _.;._'-._
+           ||   ||:::::'  _.-      !-._'-.
+            |'.  ||:::::.-!         .-'_.|
+            '.'-;|:.-'              .' U||
+               >'-.                 _.|'||
+               ||-._'-. .-'_.-' _.-o  |'||
+               ||=[ '-._.-  /.-'    o |'||
+               || '-.]=|| |'|      o  |'||
+               ||      || |'|        _| ';
+               ||      || |'|    _.-'_.-'
+               |'-._   || |'|_.-'_.-'
+               '-._'-.|| |'  _.-'
+                    '-.||_/.-'
 `)
 }
 
 const pictureTavern = () => {
+// console.log(`
+
+
+//         ________________
+//         |               |
+//         |               |
+//         |_______________| ___
+//         |               |/ _ 
+//         |               | | | |
+//         |               |  -  |
+//         |_______________| ___/
+//         |               |
+//         |               |
+//         |               |
+//         ________________
+// `)
 console.log(`
-
-
-        ________________
-        |               |
-        |               |
-        |_______________| ___
-        |               |/ _ 
-        |               | | | |
-        |               |  -  |
-        |_______________| ___/
-        |               |
-        |               |
-        |               |
-        ________________
+             _, . '__ . 
+          '_(_0o),(__)o().
+        ,o(__),_)o(_)O,(__)o
+      o(_,-o(_ )(),(__(_)oO)_
+      .O(__)o,__).(_ )o(_)Oo_)
+  .----|   |   |   |   |   |_)0
+ /  .--|   |   |   |   |   |,_)
+|  /   |   |   |   |   |   |o(_)
+|  |   |   |   |   |   |   |_/ )
+|  |   |   |   |   |   |   |O_) 
+|  |   |   |   |   |   |   |
+|  \   |   |   |   |   |   |
+ \   --|   |   |   |   |   |
+   ----|   |   |   |   |   |
+       |   |   |   |   |   |
+       \   \   \   /   /   /
+         """""""""""""""""
 `)
 
 }
 /////////////////////////////
 // //
 /////////////////////////////
+console.log(`
+_____                                                   
+  (, /  |               /) /)        /)                 /) 
+    /---|    _   _ _   // (/_    _/_(/   __  ___    _  (/  
+ ) /    |_   (_(/ (_(_(/_ /(__   (__/ )_/ (_(_)(_(_(_/_/ )_
+(_/                                               .-/      
+                                                 (_/       
+
+                                                ________)                
+                                    /)         (, /                      
+                                _/_(/    _       /___, _____   _  _  _/_ 
+                                (__/ )__(/_   ) /     (_)/ (__(/_/_)_(__ 
+                                            (_/                         
+                                                                        
+                                                    `)
+
+
+
 const username = readlineSync.question("What is your name?")
 const playerClass = readlineSync.keyInSelect(classOptions, "What class do you want to be?")
 

@@ -1,0 +1,57 @@
+{
+    "appetizers": [
+        {
+            "name": "Mozzarella Sticks",
+            "ingredients": ["Mozzarella", "Egg", "Breadcrumbs", "Flour", "Oil", "Seasonings"],
+            "description": "Cheesy and Breaded"
+        }, {
+            "name": "Blooming Onion",
+            "ingredients": ["Onion", "Flour", "Egg", "Oil", "Seasonings"],
+            "description": "Savory and Crunchy"
+        }
+    ],
+    "coldSandwiches": [
+        {
+            "name": "Turkey",
+            "ingredients": ["Turkey", "Bread", "Mayo", "Swiss Cheese", "Green Apples"],
+            "description": "Crisp and Clean"
+        }, {
+            "name": "Ham",
+            "ingredients": ["Bread", "Mayo", "Ham", "Provolone Cheese", "Pickles"],
+            "description": "Classic and Simple"
+        }
+    ],
+    "hotSandwiches": [
+        {
+            "name": "French Dip",
+            "ingredients": ["Bread", "Roast Beef", "Provolone Cheese", "Au Ju"],
+            "description": "Warm and Meaty"
+        }, {
+            "name": "Grilled Cheese",
+            "ingredients": ["Bread", "Cheese"],
+            "description": "Oozey and Gooey"
+        }
+    ],
+    "desserts": [
+        {
+            "name": "Tiramisu",
+            "ingredients": ["Coffee", "Chocolate", "Cream", "Lady's Fingers", "Whipped Cream"],
+            "description": "Caffeinated and Creamy"
+        }, {
+            "name": "Chocolate Mousse",
+            "ingredients": ["Whipped Cream", "Chocolate"],
+            "description": "Light and Airy"
+        }
+    ],
+    "drinks": [
+        {
+            "name": "London Fog",
+            "ingredients": ["Earl Gray", "Cream", "Vanilla Syrup", "Sweetener"],
+            "description": "Citrusy and Regal"
+        }, {
+            "name": "Lemonade",
+            "ingredients": ["Lemons", "Sugar", "Water"],
+            "description": "Bright and Clear"
+        }
+    ]
+}
