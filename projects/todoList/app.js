@@ -13,6 +13,8 @@ const start = () => {
 
 start()
 
+
+
 const loadPage = (arr) => {
     for (let i = 0; i < arr.data.length; i++) {
         //create
@@ -38,10 +40,10 @@ const loadPage = (arr) => {
         }
         
 
-        checkMe.addEventListener("click", (e) => {
+        checkMe.addEventListener("click", () => {
             h2.classList.toggle ("completedTask")
             console.log(i)
-            updateChecks(e, arr.data[i]) 
+            updateChecks(arr.data[i]) 
         })
 
         deleteBtn.addEventListener("click", () => {
@@ -67,7 +69,7 @@ const loadPage = (arr) => {
 
 }
 
-//POSt
+//POST
 
 
 document.postForm.addEventListener("submit", (e)=> {
@@ -76,10 +78,10 @@ document.postForm.addEventListener("submit", (e)=> {
     let newToDo = {
     title: document.postForm.title.value,
     description: document.postForm.description.value,
-    price: Number(document.postForm.price.value),
+    price: document.postForm.price.value,
     imgUrl: document.postForm.img.value,
     completed: false
-}
+    }
 console.log(newToDo)
     axios.post("https://api.vschool.io/caetlyn/todo/", newToDo)
     .then(response => console.log(response))
@@ -87,7 +89,7 @@ console.log(newToDo)
 
 })
 
-//PUT //////// 
+//PUT
 //checked
 
 const updateBoxToComplete = {
@@ -98,7 +100,7 @@ const updateBoxToNotDone = {
     completed: false
 }
 
-updateChecks = (e, todo) => {
+const updateChecks = (todo) => {
     if (todo.completed) {
     console.log("you reached me")
     axios.put(`https://api.vschool.io/caetlyn/todo/${todo._id}`, updateBoxToNotDone)

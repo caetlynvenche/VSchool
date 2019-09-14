@@ -1,0 +1,17 @@
+$lightBodyClr: #FFFFFF;
+$darkSideClr: #E5EDE8;
+$fontMain: #2E484C;
+$bodyFont: 'Libre Baskerville', sans-serif;
+$hFont: 'Julius Sans One', sans-serif;
+
+@mixin mainStyles {
+    padding: 10%;
+    p {
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    h3 {
+        padding-top: 20px;
+        font-weight: lighter;
+    }
+}

@@ -1,0 +1,120 @@
+* {
+    margin: 0px;
+}
+
+@import "./media";
+@import "./variables";
+
+
+p {
+    color: $fontMain;
+    font-family: $bodyFont;
+}
+
+
+h3 {
+    color: $fontMain;
+    font-family: $hFont;
+    text-transform: uppercase;
+}
+
+
+
+.contain {
+    display: grid;
+
+    .header {
+        background-color: green;
+
+        .title {
+        background-color:rgb(121, 121, 240);
+            h1 {
+                color: $lightBodyClr;
+                font-weight: lighter;
+                font-family: $hFont;
+                text-transform: uppercase;
+            }
+            h3 {
+                color: rgba(255,255,255,0.6);
+                font-weight: lighter;
+                font-style: italic;
+            }
+        }
+
+        .viewAll {
+        background: rgba(255,255,255,0.6);
+        
+            h3 {
+                color: rgba(255,255,255, 0.9);
+            }
+            p {
+                color: rgb(255,255,255);
+            }
+        
+        }
+    }
+
+
+
+    .bodyOne {
+        background: $lightBodyClr;
+        @include mainStyles();
+    }
+
+    .examplePgs {
+        background: $darkSideClr;
+        @include mainStyles();
+    }
+
+    .bodyTwo {
+        background: yellow;
+        @include mainStyles();
+    }
+
+    .faq {
+        background: green;
+        @include mainStyles();
+    }
+
+    .bodyThree {
+        background: $lightBodyClr;
+        @include mainStyles();
+    }
+
+    .empty {
+        background: $darkSideClr;
+        @include mainStyles();
+    }
+
+    
+
+    .footer {
+        .bySection {
+            background-color: lightblue;
+            @include mainStyles();
+        }
+
+        .logos {
+            background: #184347;
+            display:flex;
+            flex-direction: column;
+            align-items: center;
+
+            div {
+                display: flex;
+                flex-direction: row;
+                width: fit-content;
+            }
+            
+            p {
+                color: #8CA1A3;
+                @include mainStyles();
+                padding: 10px;
+                margin: 30px;
+                
+            }
+        }
+    }
+
+
+}

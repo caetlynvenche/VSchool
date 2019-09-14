@@ -1,0 +1,55 @@
+@media only screen and (max-width: 1000px) {
+    .contain {
+        display: grid;
+        grid-template-columns: 1fr;
+        .header {
+            display: block;
+        }
+        .empty {
+            display: none;
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1000px) {
+    .contain {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        .header {
+            grid-column: 1 / 3;
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            .title {
+                grid-column: 1 / 2;
+            }
+            .viewAll {
+                grid-column: 2 / 3;
+            }
+        }
+        .bodyOne {
+            grid-column: 1 / 2;
+        }
+
+        .bodyTwo {
+            grid-column: 1 / 2;
+        }
+
+        .bodyThree {
+            grid-column: 1 / 2;
+        }
+
+        .examplePgs {
+            grid-column: 2 / 3;
+            grid-row: 2 / 3;
+        }
+        .faq {
+            grid-column: 2 / 3;
+            grid-row: 3 / 4;
+        }
+
+        .footer {
+            grid-column: 1 / 3;
+        }
+    }
+}
