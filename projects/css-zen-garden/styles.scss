@@ -6,6 +6,7 @@
 @import "./variables";
 
 
+
 p {
     color: $fontMain;
     font-family: $bodyFont;
@@ -18,17 +19,28 @@ h3 {
     text-transform: uppercase;
 }
 
+h4 {
+    font-weight: lighter;
+    font-family: $hFont;
+    text-transform: uppercase;
+    color: $fontMain;
+}
+
 
 
 .contain {
     display: grid;
 
     .header {
-        background-color: green;
+        background-image: $huntington;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
 
         .title {
-        background-color:rgb(121, 121, 240);
+            display: inline;
             h1 {
+                display: inline;
                 color: $lightBodyClr;
                 font-weight: lighter;
                 font-family: $hFont;
@@ -38,6 +50,12 @@ h3 {
                 color: rgba(255,255,255,0.6);
                 font-weight: lighter;
                 font-style: italic;
+                display: block;
+            }
+            img {
+                display: inline-block;
+                width: 80px;
+                height: 80px;
             }
         }
 
@@ -64,16 +82,50 @@ h3 {
     .examplePgs {
         background: $darkSideClr;
         @include mainStyles();
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 0px;
+        
+        
+        .example {
+            padding: 30px;
+            border-top: solid 1px #d9e3dc;
+            
+
+            span {
+                color: rgb(134, 134, 134);
+                font-weight: lighter;
+                font-style: italic;
+            }
+
+            p {
+                font-family: $bodyFont;
+            }
+        }
+
+        .example:hover {
+            background: linear-gradient(to right, $darkSideClr 0%,rgba(255, 255, 255, .5) 50%, $darkSideClr 100%);
+        }
     }
 
     .bodyTwo {
-        background: yellow;
+        @include sheerGreen();
         @include mainStyles();
     }
 
     .faq {
-        background: green;
-        @include mainStyles();
+        @include sheerGreen;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        h4 {
+            padding: 30px;
+            border-top: solid 1px #afb4b1;
+        }
+
+        .last {
+            grid-column: 1 / 3;
+        }
     }
 
     .bodyThree {
@@ -90,7 +142,7 @@ h3 {
 
     .footer {
         .bySection {
-            background-color: lightblue;
+            background-image: $huntington;
             @include mainStyles();
         }
 

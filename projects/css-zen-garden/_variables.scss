@@ -15,3 +15,23 @@ $hFont: 'Julius Sans One', sans-serif;
         font-weight: lighter;
     }
 }
+
+$bamboo: url(http://csszengarden.com/214/bamboo.png);
+$contoursOpaque: url(http://csszengarden.com/214/contours-opaque.png);
+$contours: url(http://csszengarden.com/214/contours.png);
+$contours2x: url(http://csszengarden.com/214/contours@2x.png);
+$enso: url(http://csszengarden.com/214/enso.svg);
+$gridlinesOpaque: url(http://csszengarden.com/214/gridlines-opaque.png);
+$gridlines: url(http://csszengarden.com/214/gridlines.png);
+$huntington: url(http://csszengarden.com/214/huntington.jpg);
+$koi: url(http://csszengarden.com/214/koi.jpg);
+$noise: url(http://csszengarden.com/214/noise.png);
+$verdemoderna: url(http://csszengarden.com/214/noise.png);
+
+@mixin sheerGreen {
+    overflow: hidden;
+    background-color: rgba(138,188,159,0.5);
+    background-image: $bamboo;
+}
+
+

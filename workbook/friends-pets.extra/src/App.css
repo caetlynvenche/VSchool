@@ -1,0 +1,19 @@
+body {
+  background: rgba(55, 45, 110, 0.637);
+}
+
+main {
+  background: lightgray;
+  border: 1px black solid;
+  padding: 20px; 
+  margin: 10px;
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+section {
+  background-color: gray;
+  color: white;
+  border: darkslategray 2px dotted;
+}

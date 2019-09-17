@@ -2,9 +2,12 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <div>
-            <h1>footer</h1>
-        </div>
+        <footer>
+                <p>Caetlyn Venche</p>
+                <p>Crochet and Cuddles</p>
+                <p>3477 Random Address Dr</p>
+                <p>Salt Lake City, Utah</p>
+        </footer>
     );
 }
 

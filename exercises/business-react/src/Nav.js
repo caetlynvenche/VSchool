@@ -2,13 +2,13 @@ import React from 'react';
 
 const Nav = () => {
     return (
-        <div>
+        <nav>
             <ul>
                 <li>Home</li>
-                <li>Products</li>
                 <li>About</li>
+                <li>Products</li>
             </ul>
-        </div>
+        </nav>
     );
 }
 

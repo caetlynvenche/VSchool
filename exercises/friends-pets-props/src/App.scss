@@ -1,0 +1,39 @@
+* {
+    margin: 0px;
+    padding: 0px;
+
+}
+
+body {
+    background: lemonchiffon;
+    text-align: center;
+}
+
+div {
+    // border: black solid 1px;
+    padding: 10px;
+}
+
+main  {
+    border-bottom: 5px dotted black;
+    padding: 50px;
+    width: 40%;
+    margin: auto;
+}
+
+section {
+    background: lightgray;;
+    // width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: darkgray 1px solid;
+}
+
+h1 {
+    text-decoration: underline;
+    margin: 10px;
+}
+
+h2 {
+    padding: 10px;
+}

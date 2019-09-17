@@ -1,0 +1,17 @@
+div {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+body {
+  background: lavender;
+}
+
+section {
+  border: 1px dotted black;
+  padding: 20px;
+  margin: 20px;
+  width: 200px;
+}
