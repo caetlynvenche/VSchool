@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: white;
+  font-family: Lora,'Times New Roman',serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 800;
+  font-family: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+header {
+  background-image: url(https://coursework.vschool.io/content/images/2017/12/home-bg.jpg);
+  background-attachment: scroll;
+  position: relative;
+  background-size: cover;
+  height: 450px;
+  color: white;
+}
+
+header .overlay {
+  background-color: #111213;
+  height: 100%;
+  width: 100%;
+  opacity: .5;
+  position: absolute;
+}
+
+header .header nav {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  padding: 50px;
+}
+
+header .header .nav {
+  text-align: right;
+}
+
+header .header .nav a {
+  padding: 20px;
+  display: inline-block;
+}
+
+header .header h3 {
+  text-align: left;
+  font-size: 22px;
+}
+
+header .header .title {
+  margin: auto;
+  display: block;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+header .header .title h1 {
+  font-size: 50px;
+}
+
+header .header .title h3 {
+  text-align: center;
+  font-size: 23px;
+  font-weight: 10;
+}
+
+main {
+  margin: 15%;
+}
+
+main section {
+  padding: 10px;
+  border-bottom: lightgray solid 1px;
+}
+
+main section h2 {
+  font-size: 35px;
+  padding-top: 10px;
+}
+
+main section h3 {
+  font-size: 25px;
+  font-weight: 10;
+  padding-top: 10px;
+}
+
+main section p {
+  padding-top: 10px;
+  padding-bottom: 15px;
+}
+
+main section:hover h2, main section:hover h3 {
+  color: #3985A1;
+}
+
+main button {
+  color: white;
+  background: #3985A1;
+  border: none;
+  font-size: 16px;
+  padding: 15px;
+  margin: 15px;
+  float: right;
+}
+
+footer {
+  border-top: lightgray solid 1px;
+  text-align: center;
+  padding: 9%;
+}
+
+footer h1 {
+  padding: 5px;
+}
+
+footer h5 {
+  padding: 5px;
+  color: gray;
+}
+
+.icons {
+  font-size: 50px;
+}
+
+.icons i {
+  padding: 10px;
+}
+/*# sourceMappingURL=styles.css.map */

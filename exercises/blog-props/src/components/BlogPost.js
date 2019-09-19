@@ -1,10 +1,12 @@
 import React from 'react';
 
-const BlogPost = () => {
+const BlogPost = (props) => {
     return (
-        <>
-            <h1>Blog Post</h1>
-        </>
+        <section>
+            <h2>{props.title}</h2>
+            <h3>{props.subtitle}</h3>
+            <p>Posted by Start Bootstrap on {props.info}</p>
+        </section>
     )
 }
 

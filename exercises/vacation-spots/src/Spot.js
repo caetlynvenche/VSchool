@@ -5,7 +5,7 @@ const Spot = ({place, price, timeToGo}) => {
         <section>
             <h1>{place}</h1>
             <h4>${price}</h4>
-            <p>{timeToGo}</p>
+            <p style= {{}}>{timeToGo}</p>
         </section>
     )
 }

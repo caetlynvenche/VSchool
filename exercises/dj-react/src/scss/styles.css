@@ -1,0 +1,84 @@
+.white {
+  background-image: radial-gradient(white, gray);
+}
+
+.black {
+  background-image: radial-gradient(gray, black);
+}
+
+.purple {
+  background-image: radial-gradient(violet, purple);
+}
+
+.blue {
+  background-image: radial-gradient(#5c5cf8, #010169);
+}
+
+.pink {
+  background-image: radial-gradient(pink, #a5636e);
+}
+
+.yellow {
+  background-image: radial-gradient(#f7f7a3, #c2c203);
+}
+
+.red {
+  background-image: radial-gradient(#f75f5f, #b10000);
+}
+
+.green {
+  background-image: radial-gradient(#0ec40e, #014701);
+}
+
+body {
+  background: gray;
+}
+
+main {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+  margin-top: 50px;
+}
+
+section {
+  border: black dotted 1px;
+}
+
+button {
+  background: pink;
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border-radius: 50%;
+  border: 1px solid pink;
+  -webkit-box-shadow: 5px 5px 10px #252525;
+          box-shadow: 5px 5px 10px #252525;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  margin: 20px;
+  border: 1px black solid;
+  -webkit-box-shadow: 5px 5px 10px inset #252525;
+          box-shadow: 5px 5px 10px inset #252525;
+}
+
+.grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+/*# sourceMappingURL=styles.css.map */

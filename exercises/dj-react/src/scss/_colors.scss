@@ -1,0 +1,34 @@
+
+
+.white {
+    background-image: radial-gradient(white, gray);
+}
+
+.black {
+    background-image: radial-gradient(gray, black);
+}
+
+.purple {
+    background-image: radial-gradient( violet, purple);
+}
+
+.blue {
+    // background: blue;
+    background-image:radial-gradient(rgb(92, 92, 248), rgb(1, 1, 105));
+}
+
+.pink {
+    background-image: radial-gradient(pink, rgb(165, 99, 110))
+}
+
+.yellow {
+    background-image: radial-gradient(rgb(247, 247, 163), rgb(194, 194, 3))
+}
+
+.red {
+    background-image: radial-gradient(rgb(247, 95, 95), rgb(177, 0, 0));
+}
+
+.green {
+    background-image: radial-gradient(rgb(14, 196, 14), rgb(1, 71, 1));
+}

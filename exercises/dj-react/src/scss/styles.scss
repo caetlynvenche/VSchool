@@ -1,0 +1,46 @@
+@import './colors';
+
+@mixin sizesGrid {
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+}
+
+body {
+    background: gray;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: fit-content;
+    margin: auto;
+    margin-top: 50px;
+}
+
+section {
+    border: black dotted 1px;
+}
+
+button {
+    background: pink;
+    
+    @include sizesGrid();
+    border-radius: 50%;
+    border: 1px solid pink;
+    box-shadow: 5px 5px 10px rgb(37, 37, 37);
+}
+
+.square {
+    // background: gray;
+    @include sizesGrid();
+    border: 1px black solid;
+    box-shadow: 5px 5px 10px inset rgb(37, 37, 37);
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+}

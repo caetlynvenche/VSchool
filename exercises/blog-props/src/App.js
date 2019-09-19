@@ -1,13 +1,16 @@
 import React from 'react';
-import './App.css';
-import BlogPost from './components/BlogPost'
+import './css/styles.css';
+import Body from './components/Body'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 function App() {
   return (
-    <section>
-      <h1>Hi</h1>
-      <BlogPost />
-    </section>
+    <>
+      <Header />
+      <Body />
+      <Footer />
+    </>
   );
 }
 
