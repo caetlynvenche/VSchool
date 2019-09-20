@@ -21,9 +21,10 @@ class App extends Component {
             
         })
         return (
-            <>
+            <main>
+                <h1>HEROS</h1> 
                 {mappedHeros}
-            </>
+            </main>
         )
     }
     
