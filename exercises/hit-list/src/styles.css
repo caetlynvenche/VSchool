@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+img {
+    width: 300px;
+}
+
+section {
+    padding: 20px;
+    margin: auto;
+    width: 300px;
+    border: solid 5px black;
+}
+
+h1 {
+    background: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+}

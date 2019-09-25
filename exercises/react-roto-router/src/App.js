@@ -1,19 +1,20 @@
 import React, {Component} from 'react'
-import { Switch, Route, withRouter} from 'react-router-dom'
-import Home from './Home'
+import Nav from './Nav'
+import Main from './Main'
+import Footer from './Footer'
+import './styles/styles.css'
 
 class App extends Component {
     render() {
         return (
             <>
-                <Switch>
-                    <Route exact path="/" component= {Home} >Home</Route>
-                    <Route path="/About">About</Route>
-                </Switch>
+                <Nav />
+                <Main />
+                <Footer />
             </>
         )
     }
     
 }
 
-export default withRouter(App)
+export default App
