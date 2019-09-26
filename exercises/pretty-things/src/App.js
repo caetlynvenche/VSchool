@@ -63,22 +63,19 @@ class App extends Component {
     .catch(err => console.log(err))
   }
 
-  handleEdit = () => {
-    console.log("edit")
-    //show edit form or hide edit form
 
+  handleEdit = (id, updates) => {
+    axios.put(`https://api.vschool.io/caetlyn/todo/${id}`, updates)
+    .then(res => {
+      this.setState(prevState => ({
+          things: prevState.things.map(thing => thing._id === id ? res.data : thing)
+      }))
+  })
+    .catch(err => console.log(err))
   }
+  
 
-  handleEditSubmit = (e, id) => {
-    e.preventDefault()
-    console.log("edit submit")
 
-    //how to i specify the parts that are being changed on the Thing that is being changed
-
-    // axios.put(`https://api.vschool.io/caetlyn/todo/${id}`, )
-    // .then(res=> console.log(res))
-    // .catch(err => console.log(err))
-  }
 
   getThings = () => {
     axios.get("https://api.vschool.io/caetlyn/todo")
@@ -104,8 +101,7 @@ class App extends Component {
           
         <List list={this.state.things} 
           deleteItem={this.deleteItem} 
-          handleChange={this.handleChange}
-          handleEditSubmit={this.handleEditSubmit}
+          handleEdit={this.handleEdit}
         />
       </div>
     )
