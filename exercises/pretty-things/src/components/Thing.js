@@ -1,6 +1,5 @@
 import React, {Component} from 'react';
 import Form from './Form'
-// import axios from 'axios';
 
 // const Things = (props) => {
 class Things extends Component {
