@@ -4,7 +4,7 @@ import { withAdvice } from '../context/AdviceProvider'
 class SingleImage extends Component {
     render() {
         return (
-            <div style={{border: "1px solid black", margin: "20px"}}>
+            <div className="myImage">
 
                 {
                     (this.props.local.pathname === "/images")

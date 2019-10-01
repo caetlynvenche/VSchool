@@ -18,8 +18,11 @@ class SingleAdvice extends Component {
                     ?
                     <>
                         <h2>{this.props.test}</h2>
-                        <button onClick={() => this.props.handleCopyAdvice(this.props.test)}>Copy</button>
+                        <div>
+                            <button onClick={() => this.props.handleCopyAdvice(this.props.test)}>Copy</button>
                         <button onClick={() =>  this.props.handleDelete(this.props.id) }>Delete</button>
+                        </div>
+                        
                         
                     </>
                     

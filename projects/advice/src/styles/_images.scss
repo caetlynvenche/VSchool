@@ -1,8 +1,39 @@
+@media only screen and (min-width: 600px) {
+    .imageMap {
+        width: 75%;
+        padding: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 50px;
+
+        // .myImage {
+        //     display: flex;
+        //     justify-content: center;
+        // }
+    }
+}
+@media only screen and (max-width: 600px) {
+    .myImage {
+        // display: flex;
+        // justify-content: center;
+        padding-bottom: 30px;
+    }
+}
+
+
 .imageMap {
     border: black dotted 4px;
-    width: 75%;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 75px;
-    padding: 30px;
+    margin-bottom: 25px;
 }
+
+.myImage {
+    display: flex;
+    justify-content: center;
+        div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        }

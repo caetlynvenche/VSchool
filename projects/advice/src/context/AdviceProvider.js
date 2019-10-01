@@ -146,7 +146,8 @@ class AdviceProvider extends Component {
 
     render() {
         return (
-            <AdviceContext.Provider value={{
+            <AdviceContext.Provider 
+            value={{
                 savedImages: this.state.savedImages,
                 savedAdvice: this.state.savedAdvice,
                 randomAdvice: this.state.randomAdvice,
@@ -165,7 +166,8 @@ class AdviceProvider extends Component {
                 selectedAdvice: this.state.selectedAdvice,
                 selectedImage: this.state.selectedImage,
                 handleNav: this.handleNav
-            }}>
+            }}
+            >
                 {this.props.children}
             </AdviceContext.Provider>
         )

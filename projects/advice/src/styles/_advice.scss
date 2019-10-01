@@ -1,15 +1,23 @@
 @media only screen and (min-width: 600px) {
     .adviceMap {
+        width: 80%;
+
         .myAdvice {
             width: 75%;
+
+            div {
+                display: flex;
+                justify-content: space-evenly;
+            }
         }
     }
 }
 
 @media only screen and (max-width: 600px) {
     .adviceMap {
+        padding: 0px;
         .myAdvice {
-            font-size: 10px;
+            font-size: 15px;
             width: 95%;
         }
     }
@@ -20,12 +28,10 @@
     border: black dotted 4px;
     margin: auto;
     margin-top: 25px;
-    margin-bottom: 75px;
-    padding: 30px;
+    margin-bottom: 25px;
 
     .myAdvice {
         display: block;
-        width: 80%;
         margin: auto;
         border-bottom: 1px dotted black;
         padding: 10px;
@@ -35,7 +41,8 @@
         }
 
         button {
-            padding: 5px;
+            font-size: 15px;
+            padding: 10px;
         }
     }
 }

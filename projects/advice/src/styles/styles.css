@@ -155,14 +155,28 @@ nav .closeBtn:hover {
 }
 
 @media only screen and (min-width: 600px) {
+  .adviceMap {
+    width: 80%;
+  }
   .adviceMap .myAdvice {
     width: 75%;
+  }
+  .adviceMap .myAdvice div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
   }
 }
 
 @media only screen and (max-width: 600px) {
+  .adviceMap {
+    padding: 0px;
+  }
   .adviceMap .myAdvice {
-    font-size: 10px;
+    font-size: 15px;
     width: 95%;
   }
 }
@@ -171,13 +185,11 @@ nav .closeBtn:hover {
   border: black dotted 4px;
   margin: auto;
   margin-top: 25px;
-  margin-bottom: 75px;
-  padding: 30px;
+  margin-bottom: 25px;
 }
 
 .adviceMap .myAdvice {
   display: block;
-  width: 80%;
   margin: auto;
   border-bottom: 1px dotted black;
   padding: 10px;
@@ -188,16 +200,55 @@ nav .closeBtn:hover {
 }
 
 .adviceMap .myAdvice button {
-  padding: 5px;
+  font-size: 15px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 600px) {
+  .imageMap {
+    width: 75%;
+    padding: 30px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    gap: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .myImage {
+    padding-bottom: 30px;
+  }
 }
 
 .imageMap {
   border: black dotted 4px;
-  width: 75%;
   margin: auto;
   margin-top: 25px;
-  margin-bottom: 75px;
-  padding: 30px;
+  margin-bottom: 25px;
+}
+
+.myImage {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.myImage div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media only screen and (min-width: 600px) {
@@ -236,6 +287,18 @@ footer a {
   color: lightgray;
 }
 
+@media only screen and (max-width: 600px) {
+  .content {
+    padding-bottom: 0px;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .content {
+    padding-bottom: 125px;
+  }
+}
+
 * {
   margin: 0px;
   padding: 0px;
@@ -250,10 +313,6 @@ body {
 .page {
   position: relative;
   min-height: 100vh;
-}
-
-.content {
-  padding-bottom: 125px;
 }
 
 h1 {
