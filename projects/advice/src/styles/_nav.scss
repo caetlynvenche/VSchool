@@ -1,0 +1,47 @@
+nav {
+    width: 230px;
+    background: gray;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    z-index: 2;
+    transition: 0.5s;padding-top: 60px;
+    border: black solid 3px;
+
+    a {
+        padding: 70px;
+        padding-top: 0px;
+        font-size: 30px;
+        text-decoration: none;
+        color: white;
+    }
+
+    a:hover {
+        color: lightgray;
+    }
+
+    .closeBtn {
+        color: lightgray;
+        top: 0;
+        position: absolute;
+        font-weight: lighter;
+        font-size: 20px;
+        display: block;
+        margin-left: 223px;
+        z-index: 3;
+        // padding-top: 10px;
+        background: gray;
+        padding: 10px;
+        border-radius: 0px 15px 15px 0px;
+    }
+    .closeBtn:hover {
+        color: rgb(163, 162, 162);
+    }
+}
+
+.navOff {
+    left: -230px;
+}

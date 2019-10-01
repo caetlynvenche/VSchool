@@ -4,11 +4,15 @@ import SingleAdvice from './SingleAdvice'
 
 const Advice = (props) => {
     const mappedAdvice = props.savedAdvice.map((single, i) => <SingleAdvice key={i}
-    test={single.text} id={single.id}/>)
+    test={single.text} id={single.id} local={props.location}/>)
     return (
         <div>
-            { mappedAdvice }
+            <h1>Advice</h1>
+            <div className="adviceMap">
+                { mappedAdvice }
+            </div>
         </div>
+        
     )
 }
 

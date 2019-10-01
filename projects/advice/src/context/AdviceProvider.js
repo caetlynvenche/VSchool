@@ -7,19 +7,24 @@ class AdviceProvider extends Component {
     constructor() {
         super()
         this.state = {
-            savedImages: [],
-            savedAdvice: [],
+            savedImages: JSON.parse(localStorage.getItem("savedImages")) || [],
+            savedAdvice: JSON.parse(localStorage.getItem("savedAdvice")) || [],
             randomAdvice: "",
             randomImage: "",
             adviceID: "",
-            selectedImage: "test image",
-            selectedAdvice: "test advice"
+            selectedImage: "",
+            selectedAdvice: ""
         }
     }
 
     componentDidMount() {
         this.getRandomAdvice()
         this.getRandomImage()
+    }
+
+    handleNav = () => {
+        const nav = document.getElementById("nav")
+        nav.classList.toggle("navOff")
     }
 
     getRandomAdvice = () => {
@@ -57,12 +62,14 @@ class AdviceProvider extends Component {
         if (this.state.savedAdvice.some(obj => obj.id === this.state.adviceID)) {
                 console.log("you already have it")
         } else {
-            this.setState(prevState => ({
-                savedAdvice: [...prevState.savedAdvice, {
-                    text: this.state.randomAdvice,
-                    id: this.state.adviceID
-                    }]
-            }))
+            const savedAdvice = JSON.parse(localStorage.getItem("savedAdvice")) || []
+            const newAdvice = {
+                text: this.state.randomAdvice,
+                id: this.state.adviceID
+            }
+            savedAdvice.push(newAdvice)
+            localStorage.setItem("savedAdvice", JSON.stringify(savedAdvice))
+            this.setState({savedAdvice})
         }
     }
 
@@ -70,17 +77,19 @@ class AdviceProvider extends Component {
         if (this.state.savedImages.some(obj => obj.id === this.state.randomImage)) {
             console.log("you already have it")
         } else {
-            this.setState(prevState => ({
-                savedImages: [...prevState.savedImages, {
-                    img: this.state.randomImage,
-                    id: this.state.randomImage
-                }]
-            }))
+
+            const savedImages = JSON.parse(localStorage.getItem("savedImages")) || []
+            const newImage = {
+                img: this.state.randomImage,
+                id: this.state.adviceID
+            }
+            savedImages.push(newImage)
+            localStorage.setItem("savedImages", JSON.stringify(savedImages))
+            this.setState({savedImages})
         }  
     }
 
     handleBlur = () => {
-        console.log("bluuuuuurrr")
         if(this.state.randomImage.includes("?blur")) {
             this.setState(prevState => ({
                 randomImage: prevState.randomImage.replace("?blur", "")
@@ -93,7 +102,6 @@ class AdviceProvider extends Component {
     }
 
     handleColor = () => {
-        console.log("colooooooor")
         if(this.state.randomImage.includes("?grayscale")) {
             this.setState(prevState => ({
                 randomImage: prevState.randomImage.replace("?grayscale", "")
@@ -106,31 +114,34 @@ class AdviceProvider extends Component {
     }
 
     handleDelete = (myTarget) => {
-        this.setState(prev => {
-            return {
-                savedAdvice: prev.savedAdvice.filter(advice => advice.id !== myTarget)
-            }
-        })
+        const savedAdvice = this.state.savedAdvice.filter(advice => advice.id !== myTarget)
+
+        localStorage.setItem("savedAdvice", JSON.stringify(savedAdvice))
+
+        this.setState({savedAdvice})
     }
 
     handleDeleteImg = (myTarget) => {
-        this.setState(prev => {
-            return {
-                savedImages: prev.savedImages.filter(img => img.id !== myTarget)
-            }
-        })
+
+        const savedImages = this.state.savedImages.filter(img => img.id !== myTarget)
+        localStorage.setItem("savedImages", JSON.stringify(savedImages))
+        this.setState({savedImages})
     }
 
     handleCopyAdvice = (myTarget) => {
         window.prompt("Copy to clipboard: Ctrl+C, Enter", myTarget)
     }  
     
-    handleSelectedImage = () => {
-
+    handleSelectedImage = myTarget => {
+        this.setState({
+            selectedImage: myTarget.myImage
+        })
     }
 
-    handleSelectedAdvice = () => {
-
+    handleSelectedAdvice = (myTarget) => {
+        this.setState({
+            selectedAdvice: myTarget.test
+        })
     }
 
     render() {
@@ -149,8 +160,11 @@ class AdviceProvider extends Component {
                 handleBlur: this.handleBlur,
                 handleColor: this.handleColor,
                 handleCopyAdvice: this.handleCopyAdvice,
+                handleSelectedAdvice: this.handleSelectedAdvice,
+                handleSelectedImage: this.handleSelectedImage,
                 selectedAdvice: this.state.selectedAdvice,
-                selectedImage: this.state.selectedImage
+                selectedImage: this.state.selectedImage,
+                handleNav: this.handleNav
             }}>
                 {this.props.children}
             </AdviceContext.Provider>

@@ -10,19 +10,27 @@ import Footer from './Footer'
 
 const App = () => {
     return (
-        <>
+        <div className="page">
             <Nav />
 
-            <Switch>
-                <Route exact path="/" component={Home}></Route>
-                <Route path="/advice" component={Advice}></Route>
-                <Route path="/images" component={Images}></Route>
-                <Route path="/canvas" component={Canvas}></Route>
-            </Switch>
+            <div className="content">
 
+            
+
+            <Switch>
+                <Route exact path="/"
+                render={rProps => <Home {...rProps}/>}></Route>
+
+                <Route path="/advice" render={rProps => <Advice {...rProps}/>}></Route>
+
+                <Route path="/images" render={rProps => <Images {...rProps}/>}></Route>
+                
+                <Route path="/canvas" render={rProps => <Canvas {...rProps}/>}></Route>
+            </Switch>
+            </div>
 
             <Footer />
-        </>
+        </div>
     )
 }
 

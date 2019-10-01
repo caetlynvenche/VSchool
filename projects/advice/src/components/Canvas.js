@@ -6,12 +6,19 @@ import { withAdvice } from '../context/AdviceProvider'
 const Canvas = (props) => {
     return (
         <section>
-            canvas
-            <h1>Advice: {props.selectedAdvice}</h1>
-            <h2> Image: {props.selectedImage}</h2>
+            <h1>{props.selectedAdvice}</h1>
+            {
+                !(props.selectedImage === "")
+                ?
+                <img src={props.selectedImage} alt="Selected" />
+                :
+                null
+            }
 
-            <Images />
-            <Advice />
+            
+
+            <Images {...props}/>
+            <Advice {...props}/>
         </section>
         
     )

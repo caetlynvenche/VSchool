@@ -12,15 +12,24 @@ class SingleAdvice extends Component {
 
     render() {
         return (
-            <div style={{border: "1px solid black", margin: "20px"}}>
-                <h2>{this.props.test}</h2>
+            <div className="myAdvice">
+                {
+                    (this.props.local.pathname === "/advice")
+                    ?
+                    <>
+                        <h2>{this.props.test}</h2>
+                        <button onClick={() => this.props.handleCopyAdvice(this.props.test)}>Copy</button>
+                        <button onClick={() =>  this.props.handleDelete(this.props.id) }>Delete</button>
+                        
+                    </>
+                    
+                    :
+                    <button onClick={() => this.props.handleSelectedAdvice(this.props)}><h2>{this.props.test}</h2></button>
+                    
+                }
+                
+                
 
-                {/* if statement to check what page this is on, and change text accordingly */}
-                
-                <button onClick={() => this.props.handleCopyAdvice(this.props.test)}>Copy</button>
-                <button onClick={() =>  this.props.handleDelete(this.props.id) }>Delete</button>
-                
-                
             </div>
         )
     }

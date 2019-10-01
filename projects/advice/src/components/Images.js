@@ -3,10 +3,13 @@ import { withAdvice } from '../context/AdviceProvider'
 import SingleImage from './SingleImage'
 
 const Images = (props) => {
-    const mappedImages = props.savedImages.map((single, i) => <SingleImage key={i} myImage={single.img} id={single.id}/>)
+    const mappedImages = props.savedImages.map((single, i) => <SingleImage key={i} myImage={single.img} id={single.id} local={props.location}/>)
     return (
-        <div>
-            {mappedImages}
+        <div >
+            <h1>Images</h1>
+            <div className="imageMap">
+                {mappedImages}
+            </div>
         </div>
     )
 }

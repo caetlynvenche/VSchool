@@ -1,0 +1,41 @@
+@media only screen and (min-width: 600px) {
+    .adviceMap {
+        .myAdvice {
+            width: 75%;
+        }
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .adviceMap {
+        .myAdvice {
+            font-size: 10px;
+            width: 95%;
+        }
+    }
+}
+
+
+.adviceMap {
+    border: black dotted 4px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 75px;
+    padding: 30px;
+
+    .myAdvice {
+        display: block;
+        width: 80%;
+        margin: auto;
+        border-bottom: 1px dotted black;
+        padding: 10px;
+        
+        h2 {
+            padding: 25px;
+        }
+
+        button {
+            padding: 5px;
+        }
+    }
+}

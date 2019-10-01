@@ -9,6 +9,5 @@ ReactDOM.render(
         <BrowserRouter>
             <App />
         </BrowserRouter>
-        
     </AdviceProvider>, 
 document.getElementById('root'))
