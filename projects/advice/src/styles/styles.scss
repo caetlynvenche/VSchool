@@ -2,18 +2,25 @@
 @import './nav';
 @import './advice';
 @import './images';
+@import './canvas';
 @import './footer';
-
-
 
 @media only screen and (max-width: 600px) {
     .content {
         padding-bottom: 0px;
     }
+
+    .showCanvas {
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 600px) {
     .content {
         padding-bottom: 125px;
+    }
+
+    .showCanvas {
+        width: 50%;
     }
 }
 * {
@@ -23,7 +30,7 @@
 }
 
 body {
-    background: rosybrown;
+    background: mistyrose;
 }
 
 .page {
@@ -35,4 +42,51 @@ body {
 h1 {
     text-align: center;
     padding: 50px;
+}
+
+.hideTab {
+    display: none;
+}
+
+.tabLink {
+    display: block;
+    margin: auto; 
+    padding: 10px;
+    font-size: 15px;
+}
+
+button {
+    color: white;
+    background: gray;
+    border: none;
+
+    a {
+        color: white;
+        text-decoration: none;
+    }
+}
+
+button:hover {
+    color: lightgray;
+}
+
+a:hover {
+    color: lightgray;
+}
+
+.showCanvas {
+    border: black solid 1px;
+    height: 400px;
+    margin: auto;
+    margin-top: 45px;
+    margin-bottom: 25px;
+}
+
+header {
+    h1 {
+        font-size: 50px;
+        background: gray;
+        width: 100%;
+        color: white;
+    }
 }

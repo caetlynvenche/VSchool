@@ -117,7 +117,6 @@ nav {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   padding-top: 60px;
-  border: black solid 3px;
 }
 
 nav a {
@@ -155,8 +154,34 @@ nav .closeBtn:hover {
 }
 
 @media only screen and (min-width: 600px) {
+  section .adviceMap {
+    background: gray;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow: scroll;
+    height: 300px;
+  }
+  section .adviceMap .myAdvice {
+    margin: 0px;
+    width: 550px;
+  }
+  section .adviceMap .myAdvice button {
+    width: 500px;
+    height: 150px;
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+  }
   .adviceMap {
-    width: 80%;
+    width: 75%;
   }
   .adviceMap .myAdvice {
     width: 75%;
@@ -172,6 +197,27 @@ nav .closeBtn:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  section .adviceMap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    overflow: scroll;
+    height: 300px;
+    background: gray;
+  }
+  section .adviceMap .myAdvice {
+    border-bottom: none;
+  }
+  section .adviceMap .myAdvice button {
+    width: 350px;
+    display: block;
+    margin: auto;
+    margin-right: 20px;
+  }
   .adviceMap {
     padding: 0px;
   }
@@ -191,7 +237,6 @@ nav .closeBtn:hover {
 .adviceMap .myAdvice {
   display: block;
   margin: auto;
-  border-bottom: 1px dotted black;
   padding: 10px;
 }
 
@@ -229,6 +274,25 @@ nav .closeBtn:hover {
   margin-bottom: 25px;
 }
 
+section img {
+  margin: auto;
+  display: block;
+  padding: 20px;
+}
+
+section .imageMap {
+  background: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 300px;
+  overflow: scroll;
+}
+
+section .imageMap .myImage {
+  margin-right: 20px;
+}
+
 .myImage {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -236,6 +300,11 @@ nav .closeBtn:hover {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.myImage button {
+  font-size: 15px;
+  padding: 5px;
 }
 
 .myImage div {
@@ -270,7 +339,6 @@ nav .closeBtn:hover {
 footer {
   width: 100%;
   background: gray;
-  border: black solid 2px;
   padding: 20px;
   font-size: 40px;
   height: 125px;
@@ -291,11 +359,17 @@ footer a {
   .content {
     padding-bottom: 0px;
   }
+  .showCanvas {
+    width: 100%;
+  }
 }
 
 @media only screen and (min-width: 600px) {
   .content {
     padding-bottom: 125px;
+  }
+  .showCanvas {
+    width: 50%;
   }
 }
 
@@ -307,7 +381,7 @@ footer a {
 }
 
 body {
-  background: rosybrown;
+  background: mistyrose;
 }
 
 .page {
@@ -318,5 +392,50 @@ body {
 h1 {
   text-align: center;
   padding: 50px;
+}
+
+.hideTab {
+  display: none;
+}
+
+.tabLink {
+  display: block;
+  margin: auto;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button {
+  color: white;
+  background: gray;
+  border: none;
+}
+
+button a {
+  color: white;
+  text-decoration: none;
+}
+
+button:hover {
+  color: lightgray;
+}
+
+a:hover {
+  color: lightgray;
+}
+
+.showCanvas {
+  border: black solid 1px;
+  height: 400px;
+  margin: auto;
+  margin-top: 45px;
+  margin-bottom: 25px;
+}
+
+header h1 {
+  font-size: 50px;
+  background: gray;
+  width: 100%;
+  color: white;
 }
 /*# sourceMappingURL=styles.css.map */

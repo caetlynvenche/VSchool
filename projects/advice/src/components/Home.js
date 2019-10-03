@@ -4,6 +4,9 @@ import { withAdvice } from '../context/AdviceProvider'
 const Home = (props) => {
     return (
         <main>
+            <header>
+                <h1>Home</h1>
+            </header>
             <div className="homeBtns">
                 <button onClick={props.handleRandom} className="generateBtn">Generate</button>
 

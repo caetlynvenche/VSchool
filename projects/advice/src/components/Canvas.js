@@ -6,7 +6,11 @@ import { withAdvice } from '../context/AdviceProvider'
 const Canvas = (props) => {
     return (
         <section>
-            <h1>{props.selectedAdvice}</h1>
+            <header>
+                <h1>Canvas</h1>
+            </header>
+            <div className="showCanvas">
+                <h1>{props.selectedAdvice}</h1>
             {
                 !(props.selectedImage === "")
                 ?
@@ -14,11 +18,20 @@ const Canvas = (props) => {
                 :
                 null
             }
-
+            </div>
             
 
-            <Images {...props}/>
-            <Advice {...props}/>
+            
+                <button className="tabLink" onClick={() => props.handleTab("advice", "images")}>Saved Components</button>
+
+            <div id="advice">
+                <Advice {...props}/>
+            </div>
+
+            <div id="images" className="hideTab">
+                <Images {...props} />
+            </div>
+            
         </section>
         
     )

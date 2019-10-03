@@ -1,6 +1,30 @@
 @media only screen and (min-width: 600px) {
+    section {
+        .adviceMap {
+            background: gray;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: scroll;
+            height: 300px;
+
+            .myAdvice {
+                button {
+                    width: 500px;
+                    height: 150px;
+                    display: block;
+                    margin: auto;
+                    margin-right: 20px;
+                }
+                margin: 0px;
+                width: 550px;
+            }
+        }
+    }
+
     .adviceMap {
-        width: 80%;
+        width: 75%;
+        
 
         .myAdvice {
             width: 75%;
@@ -14,8 +38,29 @@
 }
 
 @media only screen and (max-width: 600px) {
+
+    section { 
+        .adviceMap {
+            display: flex;
+            flex-direction: row;
+            overflow: scroll;
+            height: 300px;
+            background: gray;
+
+            .myAdvice {
+                button {
+                    width: 350px;
+                    display: block;
+                    margin: auto;
+                    margin-right: 20px;
+                }
+                border-bottom: none;
+            }
+        }      
+    }
     .adviceMap {
         padding: 0px;
+        
         .myAdvice {
             font-size: 15px;
             width: 95%;
@@ -29,11 +74,11 @@
     margin: auto;
     margin-top: 25px;
     margin-bottom: 25px;
+    
 
     .myAdvice {
         display: block;
         margin: auto;
-        border-bottom: 1px dotted black;
         padding: 10px;
         
         h2 {

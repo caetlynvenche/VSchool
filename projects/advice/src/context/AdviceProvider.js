@@ -17,9 +17,11 @@ class AdviceProvider extends Component {
         }
     }
 
-    componentDidMount() {
+    async componentDidMount() {
+
         this.getRandomAdvice()
         this.getRandomImage()
+
     }
 
     handleNav = () => {
@@ -144,6 +146,14 @@ class AdviceProvider extends Component {
         })
     }
 
+    handleTab = (target, notMyTarget) => {
+        const myTarget = document.getElementById(target)
+        const notTarget = document.getElementById(notMyTarget)
+        myTarget.classList.toggle("hideTab")
+        notTarget.classList.toggle("hideTab")
+
+    }
+
     render() {
         return (
             <AdviceContext.Provider 
@@ -165,7 +175,8 @@ class AdviceProvider extends Component {
                 handleSelectedImage: this.handleSelectedImage,
                 selectedAdvice: this.state.selectedAdvice,
                 selectedImage: this.state.selectedImage,
-                handleNav: this.handleNav
+                handleNav: this.handleNav,
+                handleTab:this.handleTab
             }}
             >
                 {this.props.children}

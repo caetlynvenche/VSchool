@@ -1,21 +1,15 @@
 @media only screen and (min-width: 600px) {
+    
     .imageMap {
         width: 75%;
         padding: 30px;
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 50px;
-
-        // .myImage {
-        //     display: flex;
-        //     justify-content: center;
-        // }
     }
 }
 @media only screen and (max-width: 600px) {
     .myImage {
-        // display: flex;
-        // justify-content: center;
         padding-bottom: 30px;
     }
 }
@@ -28,9 +22,32 @@
     margin-bottom: 25px;
 }
 
+section {
+    img {
+        margin: auto;
+        display: block;
+        padding: 20px;
+    }
+        .imageMap {
+            background: gray;
+            display: flex;
+            height: 300px;
+
+            .myImage {
+                margin-right: 20px;
+            }
+            overflow: scroll;
+        }
+    }
+    
 .myImage {
     display: flex;
     justify-content: center;
+    
+    button {
+        font-size: 15px;
+        padding: 5px;
+    }
         div {
             display: flex;
             flex-direction: column;
