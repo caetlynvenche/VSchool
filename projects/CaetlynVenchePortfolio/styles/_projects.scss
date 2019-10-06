@@ -1,0 +1,22 @@
+@import './variables';
+
+.projDiv {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    div {
+        background: $mainColor;
+        width: 450px;
+        height: 450px;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        h2 {
+            border: black solid 2px;
+            background: $accent;
+        }
+    }
+    
+}

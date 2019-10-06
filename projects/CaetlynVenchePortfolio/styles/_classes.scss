@@ -1,0 +1,52 @@
+.page {
+    position: relative;
+    min-height: 100vh;
+}
+.whoAmI {
+    padding: 100px 25%;
+}
+
+.skills {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.skill {
+    // border: 1px solid black;
+}
+
+.projectSection {
+    padding: 50px;
+    background: $secondColor;
+
+    div {
+        border: solid 1px $darkText;
+        margin: 30px;
+    }
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    @include accentSection;
+
+    p {
+        font-size: 75px; 
+        padding: 50px;
+    }
+}
+
+.resume {
+    @include accentSection;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    button {
+        font-size: 20px;
+        padding: 20px;
+        margin: 40px;
+        background: $secondColor;
+        color: $lightText;
+    }
+}

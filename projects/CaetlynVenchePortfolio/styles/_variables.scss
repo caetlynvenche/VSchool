@@ -1,0 +1,10 @@
+$accent: rgb(248, 219, 105);
+$mainColor: rgb(233, 232, 232);
+$secondColor: rgb(109, 108, 108);
+
+$lightText: rgb(218, 216, 216);
+$darkText: rgb(48, 48, 48);
+
+@mixin accentSection {
+    background: $accent;
+}
