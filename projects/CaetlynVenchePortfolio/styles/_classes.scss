@@ -4,6 +4,9 @@
 }
 .whoAmI {
     padding: 100px 25%;
+    h2 {
+        border-bottom: 4px solid $accent;
+    }
 }
 
 .skills {
@@ -12,33 +15,47 @@
     padding: 50px;
 }
 
-.skill {
-    // border: 1px solid black;
-}
 
 .projectSection {
     padding: 50px;
     background: $secondColor;
 
-    div {
-        border: solid 1px $darkText;
-        margin: 30px;
+    h2 {
+        color: $lightText;
     }
 }
 
 .icons {
     display: flex;
     justify-content: space-around;
-    @include accentSection;
+    @include accentSection($leafImg);
+
+    a {
+        text-decoration: none;
+        color: $accent;
+        
+    }
+
+    a:hover {
+        color: $lightText;
+    }
 
     p {
         font-size: 75px; 
-        padding: 50px;
+        padding: 50px 0px;
+        width: 74px;
+        // font-style: italic;
     }
 }
 
+.fa-github-square:before, .fa-linkedin-square:before {
+    // background: $darkText;
+    padding: 5px;
+    // border-radius: 15px;
+}
+
 .resume {
-    @include accentSection;
+    @include accentSection($CherryImg);
     display: flex;
     justify-content: center;
     padding: 40px;
@@ -48,5 +65,15 @@
         margin: 40px;
         background: $secondColor;
         color: $lightText;
+        border: none;
+        border-radius: 5px;
+        font-family: $bodyFont;
     }
+    button:hover {
+        color: $accent;
+    }
+}
+
+.jump {
+    padding: 0;
 }

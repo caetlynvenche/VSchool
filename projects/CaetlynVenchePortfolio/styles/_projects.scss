@@ -1,22 +1,71 @@
 @import './variables';
 
 .projDiv {
+    //block holding all of the pieces
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    div {
-        background: $mainColor;
-        width: 450px;
-        height: 450px;
+    margin: 20px;
+
+    img {
+        // height: 200px;
+        // width: 400px;
+        width: 100%;
+    }
+
+
+
+    .imgBlock {
+        background: $lightText;
+        border: 5px solid $darkText;
+        overflow: hidden;
+        width: 400px;
+        height: 250px;
         margin: auto;
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
 
         h2 {
-            border: black solid 2px;
             background: $accent;
+            color: $darkText;
+            padding: 10px;
+            height: 60px;
         }
     }
     
+}
+
+.projBlock {
+    border-bottom: 4px solid $accent;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+aside {
+    width: 400px;
+    height: 250px;
+    // border: 1px solid black;
+    color: $lightText;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+
+    .usedLang {
+        margin: auto;
+    }
+    button {
+        color: $darkText;
+        border: none;
+        border-radius: 2px;
+        padding: 7px;
+        margin:  auto;
+        font-family: $bodyFont;
+    }
+    button:hover {
+        background: $accent;
+    }
 }
