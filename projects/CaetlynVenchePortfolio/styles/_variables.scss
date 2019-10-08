@@ -77,9 +77,11 @@ $headerImg: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.j
     nav {
         display: flex;
         flex-direction: column;
+
         div {
             display: flex;
             flex-direction: column;
+            align-self: center;
 
             a {
                 text-align: center;
@@ -90,7 +92,7 @@ $headerImg: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.j
             font-size: 20px;
             align-self: center;
         }
-        .aTag {
+        #aTag {
             align-self: flex-start;
         }
     }

@@ -58,6 +58,8 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   nav div a {
     text-align: center;
@@ -69,7 +71,7 @@
         -ms-grid-row-align: center;
         align-self: center;
   }
-  nav .aTag {
+  nav #aTag {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
@@ -289,6 +291,8 @@ aside button:hover {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
   nav div a {
     text-align: center;
@@ -300,7 +304,7 @@ aside button:hover {
         -ms-grid-row-align: center;
         align-self: center;
   }
-  nav .aTag {
+  nav #aTag {
     -ms-flex-item-align: start;
         align-self: flex-start;
   }
