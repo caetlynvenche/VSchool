@@ -1,0 +1,25 @@
+nav {
+    background: $secondColor;
+    padding: 15px;
+    
+    // flex-direction: row-reverse;
+    position: sticky;
+    top: 0px;
+    box-shadow: 0px 3px 3px $accent;
+
+    div {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    a {
+        color: $lightText;
+        text-decoration: none;
+        font-size: 25px;
+        font-family: $focalFont;
+    }
+
+    a:hover {
+        color: $accent;
+    }
+}

@@ -3,7 +3,6 @@
     min-height: 100vh;
 }
 .whoAmI {
-    padding: 100px 25%;
     h2 {
         border-bottom: 4px solid $accent;
     }
@@ -76,4 +75,12 @@
 
 .jump {
     padding: 0;
+}
+
+.none {
+    display: none;
+}
+
+.navList {
+    text-align: center;
 }

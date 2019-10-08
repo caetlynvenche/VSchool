@@ -1,0 +1,21 @@
+@import './variables';
+
+header {
+    background-image: $headerImg;
+    background-size: 100% 150%;
+    background-position: bottom;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+
+    h1 {
+        
+        text-align: center;
+        padding: 10px;
+        background: $lightText;
+        opacity: .8;
+        border-radius: 30px;
+        font-family: $focalFont;
+        box-shadow: 2px 2px 15px $lightText;
+    }
+}

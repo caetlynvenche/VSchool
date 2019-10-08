@@ -2,6 +2,155 @@
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
+@media only screen and (min-width: 600px) {
+  header {
+    height: 450px;
+    padding: 60px 50px;
+  }
+  header h1 {
+    font-size: 50px;
+    width: 40%;
+  }
+  h2 {
+    padding-top: 50px;
+  }
+  .whoAmI {
+    padding: 100px 25%;
+  }
+  .imgBlock {
+    width: 400px;
+    height: 250px;
+  }
+  aside {
+    width: 400px;
+    height: 250px;
+  }
+  aside button {
+    margin: auto;
+  }
+  .skills {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 200px;
+    padding: 25px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav div a {
+    text-align: center;
+  }
+  nav a {
+    margin: 7px;
+    font-size: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  nav .aTag {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  h2 {
+    padding-top: 30px;
+  }
+  .whoAmI {
+    padding: 40px 15%;
+  }
+  .imgBlock {
+    width: 350px;
+    height: 230px;
+  }
+  aside {
+    width: 350px;
+    height: 230px;
+  }
+  aside button {
+    margin: 10px;
+  }
+  .skills {
+    padding: 30px;
+    padding-top: 20px;
+  }
+}
+
+header {
+  background-image: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
+  background-size: 100% 150%;
+  background-position: bottom;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+header h1 {
+  text-align: center;
+  padding: 10px;
+  background: #dad8d8;
+  opacity: .8;
+  border-radius: 30px;
+  font-family: "Cormorant Garamond", serif;
+  -webkit-box-shadow: 2px 2px 15px #dad8d8;
+          box-shadow: 2px 2px 15px #dad8d8;
+}
+
+nav {
+  background: #4A4D54;
+  padding: 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  -webkit-box-shadow: 0px 3px 3px rgba(248, 219, 105, 0.911);
+          box-shadow: 0px 3px 3px rgba(248, 219, 105, 0.911);
+}
+
+nav div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+nav a {
+  color: #dad8d8;
+  text-decoration: none;
+  font-size: 25px;
+  font-family: "Cormorant Garamond", serif;
+}
+
+nav a:hover {
+  color: rgba(248, 219, 105, 0.911);
+}
+
 .projDiv {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -21,8 +170,6 @@
   background: #dad8d8;
   border: 5px solid #303030;
   overflow: hidden;
-  width: 400px;
-  height: 250px;
   margin: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -37,14 +184,14 @@
 }
 
 .projDiv .imgBlock h2 {
-  background: #f8db69;
-  color: #303030;
+  background: #303030;
+  color: #dad8d8;
   padding: 10px;
   height: 60px;
 }
 
 .projBlock {
-  border-bottom: 4px solid #f8db69;
+  border-bottom: 1px solid rgba(248, 219, 105, 0.911);
   padding-top: 25px;
   padding-bottom: 25px;
   display: -webkit-box;
@@ -59,8 +206,6 @@
 }
 
 aside {
-  width: 400px;
-  height: 250px;
   color: #dad8d8;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -81,12 +226,105 @@ aside button {
   border: none;
   border-radius: 2px;
   padding: 7px;
-  margin: auto;
   font-family: "Raleway", sans-serif;
 }
 
 aside button:hover {
-  background: #f8db69;
+  background: rgba(248, 219, 105, 0.911);
+}
+
+@media only screen and (min-width: 600px) {
+  header {
+    height: 450px;
+    padding: 60px 50px;
+  }
+  header h1 {
+    font-size: 50px;
+    width: 40%;
+  }
+  h2 {
+    padding-top: 50px;
+  }
+  .whoAmI {
+    padding: 100px 25%;
+  }
+  .imgBlock {
+    width: 400px;
+    height: 250px;
+  }
+  aside {
+    width: 400px;
+    height: 250px;
+  }
+  aside button {
+    margin: auto;
+  }
+  .skills {
+    padding: 50px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  header {
+    height: 200px;
+    padding: 25px;
+  }
+  header h1 {
+    font-size: 30px;
+  }
+  nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  nav div a {
+    text-align: center;
+  }
+  nav a {
+    margin: 7px;
+    font-size: 20px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  nav .aTag {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+  }
+  h2 {
+    padding-top: 30px;
+  }
+  .whoAmI {
+    padding: 40px 15%;
+  }
+  .imgBlock {
+    width: 350px;
+    height: 230px;
+  }
+  aside {
+    width: 350px;
+    height: 230px;
+  }
+  aside button {
+    margin: 10px;
+  }
+  .skills {
+    padding: 30px;
+    padding-top: 20px;
+  }
 }
 
 .page {
@@ -94,12 +332,8 @@ aside button:hover {
   min-height: 100vh;
 }
 
-.whoAmI {
-  padding: 100px 25%;
-}
-
 .whoAmI h2 {
-  border-bottom: 4px solid #f8db69;
+  border-bottom: 4px solid rgba(248, 219, 105, 0.911);
 }
 
 .skills {
@@ -135,7 +369,7 @@ aside button:hover {
 
 .icons a {
   text-decoration: none;
-  color: #f8db69;
+  color: rgba(248, 219, 105, 0.911);
 }
 
 .icons a:hover {
@@ -179,11 +413,19 @@ aside button:hover {
 }
 
 .resume button:hover {
-  color: #f8db69;
+  color: rgba(248, 219, 105, 0.911);
 }
 
 .jump {
   padding: 0;
+}
+
+.none {
+  display: none;
+}
+
+.navList {
+  text-align: center;
 }
 
 * {
@@ -196,62 +438,6 @@ aside button:hover {
 body {
   background: #dad8d8;
   color: #303030;
-}
-
-header {
-  height: 450px;
-  background-image: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500");
-  background-size: 100% 150%;
-  background-position: bottom;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-header h1 {
-  width: 40%;
-  text-align: center;
-  padding: 30px;
-  font-size: 50px;
-  background: #dad8d8;
-  opacity: .8;
-  border-radius: 30px;
-  font-family: "Cormorant Garamond", serif;
-  text-shadow: 1px 1px 4px #4A4D54;
-  -webkit-box-shadow: 2px 2px 15px #303030;
-          box-shadow: 2px 2px 15px #303030;
-}
-
-nav {
-  background: #4A4D54;
-  padding: 15px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0px;
-  -webkit-box-shadow: 0px 3px 3px #f8db69;
-          box-shadow: 0px 3px 3px #f8db69;
-}
-
-nav a {
-  color: #dad8d8;
-  text-decoration: none;
-  font-size: 25px;
-  font-family: "Cormorant Garamond", serif;
-}
-
-nav a:hover {
-  color: #f8db69;
 }
 
 main {
@@ -271,7 +457,6 @@ li {
 h2 {
   text-align: center;
   padding: 30px;
-  padding-top: 50px;
   padding-bottom: 20px;
   font-family: "Cormorant Garamond", serif;
   font-size: 35px;
@@ -291,7 +476,7 @@ h5 {
   padding: 3px;
   display: inline;
   border: 1px solid #303030;
-  background: #f8db69;
+  background: rgba(248, 219, 105, 0.911);
   color: #303030;
   border-radius: 4px;
 }
@@ -316,7 +501,7 @@ footer {
 }
 
 footer h2 {
-  color: #f8db69;
+  color: rgba(248, 219, 105, 0.911);
 }
 
 p {
