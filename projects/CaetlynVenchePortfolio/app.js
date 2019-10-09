@@ -12,7 +12,6 @@ aTag.addEventListener("click", () => {
     navItem3.classList.toggle("none")
     navItem4.classList.toggle("none")
     navItem5.classList.toggle("none")
-    console.log("a tag")
 })
 
 window.addEventListener("resize", function() {

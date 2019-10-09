@@ -224,7 +224,6 @@ aside .usedLang {
 }
 
 aside button {
-  color: #303030;
   border: none;
   border-radius: 2px;
   padding: 7px;
@@ -386,10 +385,6 @@ aside button:hover {
   width: 74px;
 }
 
-.fa-github-square:before, .fa-linkedin-square:before {
-  padding: 5px;
-}
-
 .resume {
   background-image: url("https://images.pexels.com/photos/34435/pexels-photo.jpg?auto=compress&cs=tinysrgb&dpr=2&w=500");
   background-attachment: fixed;
@@ -481,7 +476,6 @@ h5 {
   display: inline;
   border: 1px solid #303030;
   background: rgba(248, 219, 105, 0.911);
-  color: #303030;
   border-radius: 4px;
 }
 

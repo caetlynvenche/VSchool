@@ -43,15 +43,10 @@
         font-size: 75px; 
         padding: 50px 0px;
         width: 74px;
-        // font-style: italic;
     }
 }
 
-.fa-github-square:before, .fa-linkedin-square:before {
-    // background: $darkText;
-    padding: 5px;
-    // border-radius: 15px;
-}
+
 
 .resume {
     @include accentSection($CherryImg);
