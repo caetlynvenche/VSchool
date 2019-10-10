@@ -1,4 +1,5 @@
 import React from 'react'
+import EditForm from './EditForm'
 
 const Bounty = (props) => {
     return (
@@ -13,6 +14,10 @@ const Bounty = (props) => {
                 :
                 <p>Is Dead</p>
             }
+            <button onClick= {() => props.handleDelete(props._id)}>Delete</button>
+
+
+            <EditForm />
         </div>
     )
 }
