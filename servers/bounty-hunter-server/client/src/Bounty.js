@@ -17,7 +17,7 @@ const Bounty = (props) => {
             <button onClick= {() => props.handleDelete(props._id)}>Delete</button>
 
 
-            <EditForm />
+            <EditForm  {...props}/>
         </div>
     )
 }

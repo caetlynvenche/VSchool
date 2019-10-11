@@ -47,11 +47,14 @@ aside {
         margin: auto;
         color: $darkText;
     }
+    a {
+        margin: auto;
+        width: fit-content;
+    }
     button {
         border: none;
         border-radius: 2px;
         padding: 7px;
-        
         font-family: $bodyFont;
     }
     button:hover {

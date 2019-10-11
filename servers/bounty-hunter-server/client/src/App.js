@@ -13,7 +13,7 @@ class App extends React.Component {
             lName: "",
             type: "",
             isLiving: true,
-            bounty: ""
+            bounty: 0
         }
     }
 
@@ -29,8 +29,6 @@ class App extends React.Component {
     }
     handleSubmit = (e) => {
         e.preventDefault()
-        //alert specified inputs from state
-        //later do post request
         const newInfo = {
             fName: this.state.fName,
             lName: this.state.lName,
@@ -55,16 +53,19 @@ class App extends React.Component {
                     lName: "",
                     type: "",
                     isLiving: true,
-                    bounty: ""
+                    bounty: 0
                 })
             })
             .catch(err => console.log(err))
     }
 
-    handleUpdate = (id) => {
-        //show current info as placeholders
-        //make updating part
-        //put request
+    handleEdit = (e) => {
+        e.preventDefault()
+        // axios.put(`/${id}`)
+        //     .then(res => console.log(res))
+        //     .catch(err => console.log(err))
+
+        console.log("handle edit here")
     }
 
     getBounties = () => {
@@ -80,7 +81,7 @@ class App extends React.Component {
 
 
     render() {
-        const mappedBounties = this.state.savedData.map(bounty => <Bounty key = {bounty._id} {...bounty} handleDelete={this.handleDelete} />)
+        const mappedBounties = this.state.savedData.map(bounty => <Bounty key = {bounty._id} {...bounty} handleDelete={this.handleDelete} handleEdit={this.handleEdit} />)
         return (
             <div>
                 <Form {...this.state} handleChange={this.handleChange} handleSubmit = {this.handleSubmit} />
