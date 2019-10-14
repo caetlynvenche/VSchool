@@ -2,19 +2,27 @@ import React from 'react'
 
 const EditForm = (props) => {
     return (
-        <div>
-            edit Form
-            <form onSubmit={props.handleEdit}>
-            <input type="text" name="fName" placeholder={props.fName} onChange={props.handleChange} />
-            <input type="text" name="lName" placeholder={props.lName} onChange={props.handleChange} />
-            <input type="radio" name="type" value="Jedi" onChange={props.handleChange} />
-            <label>Jedi</label>
-            <input type="radio" name="type" value="Sith" onChange={props.handleChange} />
-            <label>Sith</label>
-            <input type="number" name="bounty" placeholder={props.bounty} onChange={props.handleChange} />
-            <button>Update form</button>
+            <form onSubmit={props.handleEditSubmit}>
+
+                <div>
+                    <input type="text" name="newFName" placeholder={props.fName} onChange={props.handleEditChange} />
+                    <input type="text" name="newLName" placeholder={props.lName} onChange={props.handleEditChange} />
+                </div>
+            
+
+            <div>
+                <input type="radio" name="newType" value="Jedi" onChange={props.handleEditChange} />
+                <label>Jedi</label>
+                <input type="radio" name="newType" value="Sith" onChange={props.handleEditChange} />
+                <label>Sith</label>
+                <input type="number" name="newBounty" placeholder={props.bounty} onChange={props.handleEditChange} />
+            </div>
+            
+            <div>
+                <button>Update Bounty</button>
+            </div>
+            
             </form>
-        </div>
     )
 }
 

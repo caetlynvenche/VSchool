@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import Bounty from './Bounty'
 import Form from './Form'
+import './styles/styles.css'
 
 
 class App extends React.Component {
@@ -22,7 +23,6 @@ class App extends React.Component {
     }
 
     handleChange = (e) => {
-        //update changed inputs to state
         this.setState({
             [e.target.name]: e.target.value
         })
@@ -40,6 +40,7 @@ class App extends React.Component {
         axios.post("/bounty", newInfo)
             .then(res => {
                 console.log(res)
+                this.getBounties()
             })
             .catch(err => console.log(err))
     }
@@ -55,15 +56,20 @@ class App extends React.Component {
                     isLiving: true,
                     bounty: 0
                 })
+                this.getBounties()
             })
             .catch(err => console.log(err))
     }
 
-    handleEdit = (e) => {
-        e.preventDefault()
-        // axios.put(`/${id}`)
-        //     .then(res => console.log(res))
-        //     .catch(err => console.log(err))
+    handleEdit = (id, updates) => {
+        axios.put(`bounty/${id}`, updates)
+            .then((res) => {
+                this.setState(prevState => ({
+                    savedData: prevState.savedData.map(bounty => bounty._id === id ? res.data : bounty)
+                }))
+                this.getBounties()
+            })
+            .catch(err => console.log(err))
 
         console.log("handle edit here")
     }
@@ -74,16 +80,23 @@ class App extends React.Component {
             this.setState({
                 savedData: res.data
             })
-            console.log(this.state.savedData)
         })
         .catch(err => console.log(err))
     }
 
 
     render() {
-        const mappedBounties = this.state.savedData.map(bounty => <Bounty key = {bounty._id} {...bounty} handleDelete={this.handleDelete} handleEdit={this.handleEdit} />)
+        const mappedBounties = this.state.savedData.map(bounty => <Bounty 
+            key = {bounty._id} 
+            {...bounty} 
+            handleDelete={this.handleDelete} 
+            handleEdit={this.handleEdit} 
+            handleChange={this.handleChange}/>)
         return (
             <div>
+                <header>
+                    <h1>Bounty Hunter</h1>
+                </header>
                 <Form {...this.state} handleChange={this.handleChange} handleSubmit = {this.handleSubmit} />
                 { mappedBounties }
             </div>

@@ -46,11 +46,12 @@ aside {
     .usedLang {
         margin: auto;
         color: $darkText;
+
+        
     }
-    a {
-        margin: auto;
-        width: fit-content;
-    }
+
+    
+    
     button {
         border: none;
         border-radius: 2px;
@@ -60,4 +61,7 @@ aside {
     button:hover {
         background: $accent;
     }
+}
+.launchBtn {
+    margin: auto;
 }
