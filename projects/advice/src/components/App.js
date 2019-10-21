@@ -18,8 +18,7 @@ const App = () => {
             
 
             <Switch>
-                <Route exact path="/"
-                render={rProps => <Home {...rProps}/>}></Route>
+                <Route exact path="/" render={rProps => <Home {...rProps}/>}></Route>
 
                 <Route path="/advice" render={rProps => <Advice {...rProps}/>}></Route>
 

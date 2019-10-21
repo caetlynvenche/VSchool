@@ -3,9 +3,13 @@
 @import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond&display=swap");
 @import url("https://fonts.googleapis.com/css?family=Raleway&display=swap");
 @media only screen and (min-width: 600px) {
+  .myImg {
+    height: 100px;
+    width: 100px;
+  }
   header {
-    height: 450px;
-    padding: 60px 50px;
+    height: 250px;
+    padding: 30px 30px;
   }
   header h1 {
     font-size: 50px;
@@ -34,6 +38,10 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .myImg {
+    height: 75px;
+    width: 75px;
+  }
   header {
     height: 200px;
     padding: 25px;
@@ -116,17 +124,16 @@ header {
 header h1 {
   text-align: center;
   padding: 10px;
-  background: #dad8d8;
   opacity: .8;
+  color: #dad8d8;
   border-radius: 30px;
   font-family: "Cormorant Garamond", serif;
-  -webkit-box-shadow: 2px 2px 15px #dad8d8;
-          box-shadow: 2px 2px 15px #dad8d8;
 }
 
 nav {
   background: #4A4D54;
   padding: 15px;
+  z-index: 2;
   position: -webkit-sticky;
   position: sticky;
   top: 0px;
@@ -240,9 +247,13 @@ aside button:hover {
 }
 
 @media only screen and (min-width: 600px) {
+  .myImg {
+    height: 100px;
+    width: 100px;
+  }
   header {
-    height: 450px;
-    padding: 60px 50px;
+    height: 250px;
+    padding: 30px 30px;
   }
   header h1 {
     font-size: 50px;
@@ -271,6 +282,10 @@ aside button:hover {
 }
 
 @media only screen and (max-width: 600px) {
+  .myImg {
+    height: 75px;
+    width: 75px;
+  }
   header {
     height: 200px;
     padding: 25px;
@@ -414,6 +429,8 @@ aside button:hover {
   border: none;
   border-radius: 5px;
   font-family: "Raleway", sans-serif;
+  -webkit-box-shadow: 2px 2px 5px rgba(248, 219, 105, 0.911);
+          box-shadow: 2px 2px 5px rgba(248, 219, 105, 0.911);
 }
 
 .resume button:hover {
@@ -430,6 +447,16 @@ aside button:hover {
 
 .navList {
   text-align: center;
+}
+
+.myImg {
+  position: absolute;
+  border-radius: 50%;
+  background-image: url("../images/IMG_20180822_102849_2 copy.jpg");
+  background-size: 100%;
+  background-position: center;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
 }
 
 * {

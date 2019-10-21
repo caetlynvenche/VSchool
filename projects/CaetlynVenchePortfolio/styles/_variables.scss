@@ -26,9 +26,13 @@ $headerImg: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.j
 }
 
 @media only screen and (min-width: 600px) {
+    .myImg {
+        height: 100px;
+        width: 100px;
+    }
     header {
-        height: 450px;
-        padding: 60px 50px;
+        height: 250px;
+        padding: 30px 30px;
 
         h1 {
             font-size: 50px;
@@ -64,6 +68,11 @@ $headerImg: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.j
 }
 
 @media only screen and (max-width: 600px) {
+
+    .myImg {
+        height: 75px;
+        width: 75px;
+    }
     header {
         height: 200px;
         padding: 25px;
