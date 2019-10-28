@@ -65,6 +65,12 @@ $headerImg: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.j
     .skills {
         padding: 50px;
     }
+
+    .drawBlock {
+        img {
+            width: 400px;
+        }
+    }
 }
 
 @media only screen and (max-width: 600px) {
@@ -131,6 +137,13 @@ $headerImg: url("https://images.pexels.com/photos/1039109/pexels-photo-1039109.j
     .skills {
         padding: 30px;
         padding-top: 20px;
+    }
+
+    .drawBlock {
+        img {
+            width: 90vw;
+            
+        }
     }
 }
 

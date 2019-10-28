@@ -35,6 +35,9 @@
   .skills {
     padding: 50px;
   }
+  .drawBlock img {
+    width: 400px;
+  }
 }
 
 @media only screen and (max-width: 600px) {
@@ -103,6 +106,9 @@
   .skills {
     padding: 30px;
     padding-top: 20px;
+  }
+  .drawBlock img {
+    width: 90vw;
   }
 }
 
@@ -171,10 +177,6 @@ nav a:hover {
   margin: 20px;
 }
 
-.projDiv img {
-  width: 100%;
-}
-
 .projDiv .imgBlock {
   background: #dad8d8;
   border: 5px solid #303030;
@@ -199,6 +201,41 @@ nav a:hover {
   height: 60px;
 }
 
+.drawings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.drawBlock {
+  background: #dad8d8;
+  border: 5px solid #303030;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.drawBlock h2 {
+  background: #303030;
+  color: #dad8d8;
+  padding: 10px;
+  height: 60px;
+}
+
 .projBlock {
   border-bottom: 1px solid rgba(248, 219, 105, 0.911);
   padding-top: 25px;
@@ -212,6 +249,10 @@ nav a:hover {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.projBlock img {
+  width: 100%;
 }
 
 aside {
@@ -278,6 +319,9 @@ aside button:hover {
   }
   .skills {
     padding: 50px;
+  }
+  .drawBlock img {
+    width: 400px;
   }
 }
 
@@ -347,6 +391,9 @@ aside button:hover {
   .skills {
     padding: 30px;
     padding-top: 20px;
+  }
+  .drawBlock img {
+    width: 90vw;
   }
 }
 
@@ -452,7 +499,7 @@ aside button:hover {
 .myImg {
   position: absolute;
   border-radius: 50%;
-  background-image: url("../images/IMG_20180822_102849_2 copy.jpg");
+  background-image: url("../images/selfie.jpg");
   background-size: 100%;
   background-position: center;
   -webkit-transform: rotate(-20deg);
