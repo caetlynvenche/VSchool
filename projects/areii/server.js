@@ -24,6 +24,9 @@ app.use("/auth", require("./routes/authRoute"))
 app.use("/user", require("./routes/userRouter"))
 app.use("/feed", require("./routes/feedRoute"))
 app.use("/api/mypage", require("./routes/mypageRoute"))
+app.use("/comment", require("./routes/commentRoute"))
+app.use("/api/comment", require("./routes/myCommentRoute"))
+app.use("/api/admin", require("./routes/adminRoute"))
 
 app.use("*", (err, req, res, next) => {
     console.log(err)

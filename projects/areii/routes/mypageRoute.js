@@ -3,7 +3,7 @@ const mypageRouter = express.Router()
 const MyPage = require("../models/postSchema")
 
 mypageRouter.get("/", (req, res, next) => {
-    MyPage.find({ user: req.user._id}, (err, post) => {
+    MyPage.find({ user: req.user._id }, (err, post) => {
         if (err) {
             res.status(500)
             return next(err)
@@ -26,6 +26,8 @@ mypageRouter.post("/", (req, res, next) => {
     const newPost = new MyPage(req.body)
 
     newPost.user = req.user._id
+    newPost.date = new Date()
+    newPost.username = req.user.username
 
     newPost.save((err, newPost) => {
         if (err) {
