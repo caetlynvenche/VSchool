@@ -33,12 +33,13 @@ todoRouter.route("/")
     })
     .post((req, res) => {
         const newTodo = req.body
+        newTodo.completed = false
         newTodo._id = uuid()
         todos.push(newTodo)
         res.send(newTodo)
     })
 
-todoRouter.route("/_id")
+todoRouter.route("/:_id")
     .delete((req, res) => {
         const todoId = req.params._id
         const indexToDel = todos.findIndex(todo => todo._id === todoId)
