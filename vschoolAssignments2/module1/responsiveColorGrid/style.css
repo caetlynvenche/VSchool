@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 0;
+}
+
+.ltPink {
+    background: #F5C6D6;
+}
+
+.dkPink {
+    background: #EE2E84;
+}
+
+.blue {
+    background: #85CFD8;
+}
+
+.green {
+    background: #8DC63F;
+}
+
+.orange {
+    background: #E76E34;
+}
+
+div {
+    height: 125px;
+    padding: 30px;
+    border: white solid 10px;
+}
+
+@media only screen and (min-width: 768px) {
+    body {
+        display: flex;
+        flex-wrap: wrap;
+        margin: 15px;
+    }
+    .ltPink {
+        width: 100%;
+    }
+    .dkPink {
+        width: 25%;
+    }
+    .blue {
+        width: 50%;
+    }
+    .green {
+        width: 75%;
+    }
+    .orange {
+        width: 25%;
+    }
+}
