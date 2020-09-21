@@ -1,0 +1,13 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#box {
+    border: black solid 1px;
+    border-radius: 10px;
+    width: 90vh;
+    height: 90vh;
+    margin: 5vh auto;
+}
