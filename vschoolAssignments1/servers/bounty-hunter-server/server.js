@@ -21,6 +21,8 @@ mongoose.connect(process.env.MONGODB_URI ||"mongodb://localhost:27017/bountydb",
         useUnifiedTopology: true
     }, () => console.log("Connected to the DataBase"))
 
+// mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true });
+
 app.use("/bounty", require("./routes/bountyRoute"))
 
 app.use((err, req, res, next) => {
